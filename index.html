@@ -6,44 +6,84 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
-		<div id="open_system">
-			<p class="start_prompt">
-				<span class="active">感</span>
-				<span>谢</span>
-				<span>使</span>
-				<span>用</span>
-				<span>V</span>
-				<span>A</span>
-				<span>N</span>
-				<span>桌</span>
-				<span>面</span>
-				<span>！</span>
-				<span>为</span>
-				<span>了</span>
-				<span>更</span>
-				<span>好</span>
-				<span>的</span>
-				<span>体</span>
-				<span>验</span>
-				<span>，</span>
-				<span>需</span>
-				<span>要</span>
-				<span>打</span>
-				<span>开</span>
-				<span>浏</span>
-				<span>览</span>
-				<span>器</span>
-				<span>的</span>
-				<span>全</span>
-				<span>屏</span>
-				<span>模</span>
-				<span>式</span>
-				<span>。</span>
-			</p>
-			<div class="full_screen_btn">
-				<input type="button" class="full_screen_agree" value="确认"/>
-				<input type="button" class="full_screen_cancle" value="取消"/>
+		<div id="star">
+			<div id="mask"></div>
+			<div id="lock_screen">
+				<div class="cortana_prompt">
+					<span class="cortana"></span>
+					<p class="prompt">欢迎使用VAN-桌面，为了更好的使用体验，建议打开全屏模式！</p>
+				</div>
+				<div class="time">
+					<div class="time_day">10:10</div>
+					<div class="time_date">2月24日,星期五</div>
+				</div>
+				<div class="bottom_notice">
+					<div class="set_full_screen">
+						<ul class="full_screen_box">
+							<li class="full_screen_btn">全屏(推荐)</li>
+							<li class="commonly_btn">一般</li>
+						</ul>
+					</div>
+					<div class="network"></div>
+					<div class="Electricity"></div>
+				</div>
 			</div>
+			<div id="login_system">
+				<div class="user_login">
+					<div class="user_pic"></div>
+					<div class="user_name">Administrator</div>
+					<div class="user_login_btn">
+						<input type="button" id="login" value="登录" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="desktop">
+			<div id="desktopBg"></div>
+			<img class="bg" src="img/bg.jpg"/>
+			<div id="search">
+				<div class="searchLogo"></div>
+				<div class="searchBox">
+					<input type="text" class="searchText"/>
+					<input type="button" class="searchBtn" value="百度一下">
+				</div>
+			</div>
+			<div id="taskbar">
+				<div id="windows">
+					<div class="windowsCon"></div>
+					<div class="windowsConZ"></div>
+				</div>
+				<div id="webMenu">
+				</div>
+				<div id="taskbar_time">
+					<p class="time"></p>
+					<p class="date"></p>
+					<canvas id="clock" width="200px" height="200px"></canvas>
+				</div>
+			</div>
+			<div id="webApp">
+				<div data-name="music" class="music">
+					<div class="appLogo"></div>
+					<p class="appTitle">音乐</p>
+				</div>
+				<div data-name="book" class="book">
+					<div class="appLogo"></div>
+					<p class="appTitle">电子书</p>
+				</div>
+				<div data-name="game" class="game">
+					<div class="appLogo"></div>
+					<p class="appTitle">别踩白块儿</p>
+				</div>
+			</div>
+			<!--<div class="appBox">
+				<div class="appBoxTop">
+					<div class="appBoxTitle">音乐</div>
+					<div class="appBoxMenu">
+						<div class="appBoxHidden"></div>
+						<div class="appBoxClose"></div>
+					</div>
+				</div>
+			</div>-->
 		</div>
 	</body>
 	<script type="text/javascript" src="js/index.js" ></script>

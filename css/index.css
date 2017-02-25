@@ -5,74 +5,705 @@
 li{
 	list-style: none;
 }
-a{
-	text-decoration: none;
+img{
+	border: none;
 }
 html{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-	min-width: 1366px;
+	min-width: 1360px;
 	min-height: 768px;
+	overflow: hidden;
 }
 body{
 	width: 100%;
 	height: 100%;
-	font-family: "微软雅黑";
-	font-size: 16px;
+	font: 16px/120% "microsoft yahei";
 }
-#open_system{
+
+/*开始页面*/
+#star{
 	width: 100%;
 	height: 100%;
-	background: rgba(20,50,95,1);
+	background-image: url(../image/lock_screen_bg.jpg);
+	background-size: cover;
+	display: none;
+}
+#mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#lock_screen{
+	width: 100%;
+	height: 100%;
 	position: relative;
+	/*display: none;*/
+	z-index: 10;
 }
-#open_system .start_prompt{
-	width: 60%;
+#lock_screen .cortana_prompt{
+	width: 800px;
+	height: 50px;
 	position: absolute;
-	top: 35%;
-	left: 50%;
-	margin-left: -30%;
-	font-size: 50px;
-	color: rgba(200,200,200,0.8);
-	text-align: center;
-	text-shadow: 1px 1px 5px rgb(255,255,255);
-	perspective: 800px;
+	top: 50px;
+	left: 50px;
 }
-#open_system .start_prompt span{
-	display: inline-block;
-	/*float: left;*/
-	transform: translateZ(-2000px);
-	opacity: 0;
+#lock_screen .cortana{
+	float: left;
+	width: 60px;
+	height: 50px;
+	background-image: url(../image/cortana.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
-#open_system .start_prompt span.active{
-	animation: startText 1s ease-out;
-	animation-fill-mode: forwards;
-}
-@keyframes startText{
-	from{
-		transform: translateZ(-2000px);
-		opacity: 0;
-	}
-	to{
-		transform: translateZ(0px);
-		opacity: 1;
-	}
-}
-#open_system .full_screen_btn{
-	position: absolute;
-	width: 500px;
-	left: 50%;
-	margin-left: -250px;
-	bottom: 200px;
-}
-#open_system .full_screen_btn input{
-	background: none;
-	border: none;
-	outline: none;
+#lock_screen .prompt{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 10px;
 	color: #fff;
 	font-size: 25px;
-	padding: 5px;
+}
+#lock_screen .time{
+	width: 800px;
+	height: 300px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#lock_screen .time_day{
+	width: 100%;
+	height: 120px;
+	line-height: 120px;
+	font-size: 100px;
+	color: #fff;
+	margin-left: 50px;
+}
+#lock_screen .time_date{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	font-size: 80px;
+	color: #fff;
+	margin-left: 50px;
+}
+#lock_screen .bottom_notice{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	height: 80px;
+}
+#lock_screen div{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+}
+#lock_screen .set_full_screen{
+	background-image: url(../image/set.png);
+	position: relative;
+}
+#lock_screen .network{
+	background-image: url(../image/network.png);
+}
+#lock_screen .Electricity{
+	background-image: url(../image/Electricity.png);
+}
+#lock_screen .full_screen_box{
+	width: 120px;
+	height: 0;
+	position: absolute;
+	bottom: 40px;
+	left: -10px;
+	background-color: rgb(43,43,43);
+	border: 1px solid rgb(200,200,200);
+	color: #fff;
+	padding: 10px 0;
+	overflow: hidden;
+	display: none;
+}
+#lock_screen .full_screen_box li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 10px;
+}
+#lock_screen .full_screen_box li:hover{
+	background-color: rgb(68,68,68);
+}
+#login_system{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+	z-index: 10;
+}
+#login_system .user_login{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -200px;
+}
+#login_system .user_pic{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 20px auto;
+	background-image: url(../image/user_pic.png);
+	background-size: cover;
+
+}
+#login_system .user_name{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+}
+#login_system .user_login_btn{
+	width: 150px;
+	height: 48px;
+	border: 3px solid rgb(235,235,235);
+	margin: 40px auto;
+	padding: 1px;
+	background-color: rgb(39,39,47);
+}
+#login_system #login{
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+	border: 2px solid rgb(100,100,114);
+	background-color: rgb(100,100,114);
+	color: #fff;
+	font-size: 22px;
+	outline: none;
+}
+#desktop{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#desktopBg{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bg{
+	display: none;
+}
+#taskbar{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #24445c;
+}
+#taskbar #windows{
+	width: 60px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+#taskbar #windows .windowsCon{
+	width: 100%;
+	height: 100%;
+	background: rgba(100,100,100,0.5) url(../img/windows.png) no-repeat center center;
+	background-size: 25px 25px;
+}
+#taskbar #windows .windowsConZ{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+	display: none;
+}
+#taskbar #webMenu{
+	width: 700px;
+	height: 100%;
+	margin-left: 30px;
+	float: left;
+}
+#taskbar #webMenu div{
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: center;
+}
+#taskbar .webMenu_search{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
+	background-image: url(../img/search.png);
+}
+#taskbar .webMenu_music{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
+	background-image: url(../img/music.png);
+}
+#taskbar .webMenu_game{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
 	border-radius: 10px;
-	border: 2px solid #000;
+	background-image: url(../img/game.png);
+}
+#taskbar .webMenu_book{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
+	background-image: url(../img/bookbg.png);
+}
+#taskbar_time{
+	float: right;
+	width: 100px;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+#taskbar_time .time{
+	line-height: 25px;
+}
+#taskbar_time .date{
+	line-height: 25px;
+}
+#search{
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	left: -500px;
+	margin-left: 50%;
+	top: 200px;
+}
+#search .searchLogo{
+	width: 540px;
+	height: 258px;
+	background-image: url(../img/baidu_logo.png);
+	background-size: cover;
+	position: relative;
+	left: 50%;
+	margin-left: -270px;
+}
+#search .searchBox{
+	margin-top: 20px;
+	width: 800px;
+	height: 42px;
+	position: relative;
+	margin-left: 50%;
+	left: -400px;
+}
+#webMenu .nowMenu{
+	position: absolute;
+	border: 1px solid #3388FF;
+	z-index: 999999;
+}
+#search .searchBox .searchText{
+	width: 698px;
+	height: 40px;
+	font-size: 20px;
+	text-indent: 20px;
+	line-height: 40px;
+	font-family: arial;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-bottom: 1px solid #ccc;
+	border-right:none ;
+	outline: none;
+}
+#search .searchBox .searchText.focus{
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #b3b3b3;
+}
+#search .searchBox .searchText.active{
+	border-top: 1px solid #38f;
+	border-left: 1px solid #38f;
+	border-bottom: 1px solid #38f;
+}
+#search .searchBox .searchBtn{
+	width: 100px;
+	height: 42px;
+	float: left;
+	background-color: #38f;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	line-height: 42px;
+	font-family: arial;
+	font-weight: normal;
+	outline: none;
+	box-shadow: none;
+}
+#search .searchBox .searchBtn.focus{
+	background-color: #317ef3;
+	border-bottom: 1px solid #2868c8;
+	box-shadow: 1px 1px 1px rgb(100,100,100);
+}
+#webApp{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+}
+#webApp>div{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+#webApp>div .appLogo{
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+	margin: 0 auto;
+}
+#webApp>div .appTitle{
+	width: 100%;
+	height: 20px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 5px black;
+}
+#webApp .music .appLogo{
+	background-image: url(../img/music.png);
+}
+#webApp .book .appLogo{
+	background-image: url(../img/bookbg.png);
+}
+#webApp .game .appLogo{
+	width: 70px;
+	height: 70px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 15px;
+	background-image: url(../img/game.png);
+}
+.appBox{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+.appBox .appBoxTop{
+	width: 100%;
+	height: 30px;
+	background:  #24445c;
+}
+.appBox .appBoxTitle{
+	height: 100%;
+	color: #fff;
+	line-height: 30px;
+	float: left;
+	width: 200px;
+	text-indent: 10px;
+	font-size: 16px;
+}
+.appBox .appBoxMenu{
+	float: right;
+	height: 100%;
+}
+.appBox .appBoxHidden{
+	height: 100%;
+	float: left;
+	width: 30px;
+	background-image: url(../img/hidden.png);
+	background-size: cover;
+}
+.appBox .appBoxClose{
+	height: 100%;
+	float: left;
+	width: 30px;
+	background-image: url(../img/close.png);
+	background-size: cover;
+	margin-right: 10px;
+}
+#clock{
+	position: absolute;
+	top: -210px;
+	right: 10px;
+	display: none;
+}
+#calendar{
+	position: absolute;
+	top: 10px;
+	left: 1000px;
+	display: none;
+}
+#mainDesktop{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#desktopBg{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bg{
+	display: none;
+}
+#taskbar{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #24445c;
+}
+#taskbar #windows{
+	width: 60px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+#taskbar #windows .windowsCon{
+	width: 100%;
+	height: 100%;
+	background: rgba(100,100,100,0.5) url(../img/windows.png) no-repeat center center;
+	background-size: 25px 25px;
+}
+#taskbar #windows .windowsConZ{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+	display: none;
+}
+#taskbar #webMenu{
+	width: 700px;
+	height: 100%;
+	margin-left: 30px;
+	float: left;
+}
+#taskbar #webMenu div{
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: center;
+}
+#taskbar .webMenu_search{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
+	background-image: url(../img/search.png);
+}
+#taskbar .webMenu_music{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
+	background-image: url(../img/music.png);
+}
+#taskbar .webMenu_game{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
+	border-radius: 10px;
+	background-image: url(../img/game.png);
+}
+#taskbar .webMenu_book{
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin: 0 5px;
+	background-image: url(../img/bookbg.png);
+}
+#taskbar_time{
+	float: right;
+	width: 100px;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+#taskbar_time .time{
+	line-height: 25px;
+}
+#taskbar_time .date{
+	line-height: 25px;
+}
+#search{
+	width: 1000px;
+	height: 500px;
+	position: absolute;
+	left: -500px;
+	margin-left: 50%;
+	top: 200px;
+}
+#search .searchLogo{
+	width: 540px;
+	height: 258px;
+	background-image: url(../img/baidu_logo.png);
+	background-size: cover;
+	position: relative;
+	left: 50%;
+	margin-left: -270px;
+}
+#search .searchBox{
+	margin-top: 20px;
+	width: 800px;
+	height: 42px;
+	position: relative;
+	margin-left: 50%;
+	left: -400px;
+}
+#webMenu .nowMenu{
+	position: absolute;
+	border: 1px solid #3388FF;
+	z-index: 999999;
+}
+#search .searchBox .searchText{
+	width: 698px;
+	height: 40px;
+	font-size: 20px;
+	text-indent: 20px;
+	line-height: 40px;
+	font-family: arial;
+	float: left;
+	border: 1px solid #b8b8b8;
+	border-bottom: 1px solid #ccc;
+	border-right:none ;
+	outline: none;
+}
+#search .searchBox .searchText.focus{
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #b3b3b3;
+}
+#search .searchBox .searchText.active{
+	border-top: 1px solid #38f;
+	border-left: 1px solid #38f;
+	border-bottom: 1px solid #38f;
+}
+#search .searchBox .searchBtn{
+	width: 100px;
+	height: 42px;
+	float: left;
+	background-color: #38f;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	line-height: 42px;
+	font-family: arial;
+	font-weight: normal;
+	outline: none;
+	box-shadow: none;
+}
+#search .searchBox .searchBtn.focus{
+	background-color: #317ef3;
+	border-bottom: 1px solid #2868c8;
+	box-shadow: 1px 1px 1px rgb(100,100,100);
+}
+#webApp{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+}
+#webApp>div{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+#webApp>div .appLogo{
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+	margin: 0 auto;
+}
+#webApp>div .appTitle{
+	width: 100%;
+	height: 20px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 0 5px black;
+}
+#webApp .music .appLogo{
+	background-image: url(../img/music.png);
+}
+#webApp .book .appLogo{
+	background-image: url(../img/bookbg.png);
+}
+#webApp .game .appLogo{
+	width: 70px;
+	height: 70px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 15px;
+	background-image: url(../img/game.png);
+}
+.appBox{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+.appBox .appBoxTop{
+	width: 100%;
+	height: 30px;
+	background:  #24445c;
+}
+.appBox .appBoxTitle{
+	height: 100%;
+	color: #fff;
+	line-height: 30px;
+	float: left;
+	width: 200px;
+	text-indent: 10px;
+	font-size: 16px;
+}
+.appBox .appBoxMenu{
+	float: right;
+	height: 100%;
+}
+.appBox .appBoxHidden{
+	height: 100%;
+	float: left;
+	width: 30px;
+	background-image: url(../img/hidden.png);
+	background-size: cover;
+}
+.appBox .appBoxClose{
+	height: 100%;
+	float: left;
+	width: 30px;
+	background-image: url(../img/close.png);
+	background-size: cover;
+	margin-right: 10px;
 }
