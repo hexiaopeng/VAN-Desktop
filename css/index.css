@@ -42,7 +42,7 @@ body{
 	width: 100%;
 	height: 100%;
 	position: relative;
-	/*display: none;*/
+	display: none;
 	z-index: 10;
 }
 #lock_screen .cortana_prompt{
@@ -195,7 +195,7 @@ body{
 #desktopBg{
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/bg.jpg);
+	background-image: url(../image/desktop_bg3.jpg);
 	background-size: cover;
 	position: absolute;
 	top: 0;
@@ -221,7 +221,7 @@ body{
 #taskbar #windows .windowsCon{
 	width: 100%;
 	height: 100%;
-	background: rgba(100,100,100,0.5) url(../img/windows.png) no-repeat center center;
+	background: rgba(100,100,100,0.5) url(../image/windows.png) no-repeat center center;
 	background-size: 25px 25px;
 }
 #taskbar #windows .windowsConZ{
@@ -249,14 +249,14 @@ body{
 	width: 50px;
 	height: 100%;
 	margin: 0 5px;
-	background-image: url(../img/search.png);
+	background-image: url(../image/search.png);
 }
 #taskbar .webMenu_music{
 	float: left;
 	width: 50px;
 	height: 100%;
 	margin: 0 5px;
-	background-image: url(../img/music.png);
+	background-image: url(../image/music.png);
 }
 #taskbar .webMenu_game{
 	float: left;
@@ -264,14 +264,14 @@ body{
 	height: 100%;
 	margin: 0 5px;
 	border-radius: 10px;
-	background-image: url(../img/game.png);
+	background-image: url(../image/game.png);
 }
 #taskbar .webMenu_book{
 	float: left;
 	width: 50px;
 	height: 100%;
 	margin: 0 5px;
-	background-image: url(../img/bookbg.png);
+	background-image: url(../image/bookbg.png);
 }
 #taskbar_time{
 	float: right;
@@ -297,7 +297,7 @@ body{
 #search .searchLogo{
 	width: 540px;
 	height: 258px;
-	background-image: url(../img/baidu_logo.png);
+	background-image: url(../image/baidu_logo.png);
 	background-size: cover;
 	position: relative;
 	left: 50%;
@@ -387,10 +387,10 @@ body{
 	text-shadow: 0 0 5px black;
 }
 #webApp .music .appLogo{
-	background-image: url(../img/music.png);
+	background-image: url(../image/music.png);
 }
 #webApp .book .appLogo{
-	background-image: url(../img/bookbg.png);
+	background-image: url(../image/bookbg.png);
 }
 #webApp .game .appLogo{
 	width: 70px;
@@ -398,7 +398,7 @@ body{
 	margin-top: 5px;
 	margin-bottom: 5px;
 	border-radius: 15px;
-	background-image: url(../img/game.png);
+	background-image: url(../image/game.png);
 }
 .appBox{
 	width: 100%;
@@ -430,14 +430,14 @@ body{
 	height: 100%;
 	float: left;
 	width: 30px;
-	background-image: url(../img/hidden.png);
+	background-image: url(../image/hidden.png);
 	background-size: cover;
 }
 .appBox .appBoxClose{
 	height: 100%;
 	float: left;
 	width: 30px;
-	background-image: url(../img/close.png);
+	background-image: url(../image/close.png);
 	background-size: cover;
 	margin-right: 10px;
 }
@@ -452,258 +452,4 @@ body{
 	top: 10px;
 	left: 1000px;
 	display: none;
-}
-#mainDesktop{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-#desktopBg{
-	width: 100%;
-	height: 100%;
-	background-image: url(../img/bg.jpg);
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.bg{
-	display: none;
-}
-#taskbar{
-	width: 100%;
-	height: 50px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background-color: #24445c;
-}
-#taskbar #windows{
-	width: 60px;
-	height: 100%;
-	position: relative;
-	float: left;
-}
-#taskbar #windows .windowsCon{
-	width: 100%;
-	height: 100%;
-	background: rgba(100,100,100,0.5) url(../img/windows.png) no-repeat center center;
-	background-size: 25px 25px;
-}
-#taskbar #windows .windowsConZ{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0.3;
-	display: none;
-}
-#taskbar #webMenu{
-	width: 700px;
-	height: 100%;
-	margin-left: 30px;
-	float: left;
-}
-#taskbar #webMenu div{
-	background-repeat: no-repeat;
-	background-size: 40px 40px;
-	background-position: center;
-}
-#taskbar .webMenu_search{
-	float: left;
-	width: 50px;
-	height: 100%;
-	margin: 0 5px;
-	background-image: url(../img/search.png);
-}
-#taskbar .webMenu_music{
-	float: left;
-	width: 50px;
-	height: 100%;
-	margin: 0 5px;
-	background-image: url(../img/music.png);
-}
-#taskbar .webMenu_game{
-	float: left;
-	width: 50px;
-	height: 100%;
-	margin: 0 5px;
-	border-radius: 10px;
-	background-image: url(../img/game.png);
-}
-#taskbar .webMenu_book{
-	float: left;
-	width: 50px;
-	height: 100%;
-	margin: 0 5px;
-	background-image: url(../img/bookbg.png);
-}
-#taskbar_time{
-	float: right;
-	width: 100px;
-	height: 100%;
-	color: #fff;
-	text-align: center;
-}
-#taskbar_time .time{
-	line-height: 25px;
-}
-#taskbar_time .date{
-	line-height: 25px;
-}
-#search{
-	width: 1000px;
-	height: 500px;
-	position: absolute;
-	left: -500px;
-	margin-left: 50%;
-	top: 200px;
-}
-#search .searchLogo{
-	width: 540px;
-	height: 258px;
-	background-image: url(../img/baidu_logo.png);
-	background-size: cover;
-	position: relative;
-	left: 50%;
-	margin-left: -270px;
-}
-#search .searchBox{
-	margin-top: 20px;
-	width: 800px;
-	height: 42px;
-	position: relative;
-	margin-left: 50%;
-	left: -400px;
-}
-#webMenu .nowMenu{
-	position: absolute;
-	border: 1px solid #3388FF;
-	z-index: 999999;
-}
-#search .searchBox .searchText{
-	width: 698px;
-	height: 40px;
-	font-size: 20px;
-	text-indent: 20px;
-	line-height: 40px;
-	font-family: arial;
-	float: left;
-	border: 1px solid #b8b8b8;
-	border-bottom: 1px solid #ccc;
-	border-right:none ;
-	outline: none;
-}
-#search .searchBox .searchText.focus{
-	border-top: 1px solid #999;
-	border-left: 1px solid #999;
-	border-bottom: 1px solid #b3b3b3;
-}
-#search .searchBox .searchText.active{
-	border-top: 1px solid #38f;
-	border-left: 1px solid #38f;
-	border-bottom: 1px solid #38f;
-}
-#search .searchBox .searchBtn{
-	width: 100px;
-	height: 42px;
-	float: left;
-	background-color: #38f;
-	border: none;
-	color: #fff;
-	font-size: 16px;
-	line-height: 42px;
-	font-family: arial;
-	font-weight: normal;
-	outline: none;
-	box-shadow: none;
-}
-#search .searchBox .searchBtn.focus{
-	background-color: #317ef3;
-	border-bottom: 1px solid #2868c8;
-	box-shadow: 1px 1px 1px rgb(100,100,100);
-}
-#webApp{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
-}
-#webApp>div{
-	width: 100px;
-	height: 100px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-}
-#webApp>div .appLogo{
-	width: 80px;
-	height: 80px;
-	background-size: cover;
-	margin: 0 auto;
-}
-#webApp>div .appTitle{
-	width: 100%;
-	height: 20px;
-	font-size: 14px;
-	line-height: 20px;
-	text-align: center;
-	color: #fff;
-	text-shadow: 0 0 5px black;
-}
-#webApp .music .appLogo{
-	background-image: url(../img/music.png);
-}
-#webApp .book .appLogo{
-	background-image: url(../img/bookbg.png);
-}
-#webApp .game .appLogo{
-	width: 70px;
-	height: 70px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-radius: 15px;
-	background-image: url(../img/game.png);
-}
-.appBox{
-	width: 100%;
-	height: 600px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 99999;
-}
-.appBox .appBoxTop{
-	width: 100%;
-	height: 30px;
-	background:  #24445c;
-}
-.appBox .appBoxTitle{
-	height: 100%;
-	color: #fff;
-	line-height: 30px;
-	float: left;
-	width: 200px;
-	text-indent: 10px;
-	font-size: 16px;
-}
-.appBox .appBoxMenu{
-	float: right;
-	height: 100%;
-}
-.appBox .appBoxHidden{
-	height: 100%;
-	float: left;
-	width: 30px;
-	background-image: url(../img/hidden.png);
-	background-size: cover;
-}
-.appBox .appBoxClose{
-	height: 100%;
-	float: left;
-	width: 30px;
-	background-image: url(../img/close.png);
-	background-size: cover;
-	margin-right: 10px;
 }

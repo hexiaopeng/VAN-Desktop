@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/music.css" />
+	</head>
+	<body>
+		<audio src="music/Always Come Back To Your Love_Samantha Mumba_.mp3" id="audio"></audio>
+		<div id="music_top">
+			<p class="music_title">Van·Music</p>
+			<div id="music_search_box">
+				<input type="text" id="music_search" placeholder="接口版权限制，暂停使用在线功能" />
+				<span id="music_search_btn"><i></i></span>
+				<div id="music_search_content">
+					<p id="music_search_prompt">
+						条件限制，仅加载部分资源！
+						<span id="close_search"></span>
+					</p>
+					<ul id="music_search_list">
+						<!--<li>千里之外-周杰伦-依然范特西依然范特西依然范特西依然范特西</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="music_album">
+			<!--<img src="images/play_needle.png" id="play_needle" class="play"/>-->
+			<div class="music_album_box">
+				<div id="music_disc_box">
+					<img src="music/Always Come Back To Your Love_Samantha Mumba_.jpg" id="music_album_img"/>
+					<img src="image/play_disc.png" id="music_disc_img"/>
+				</div>
+				<div id="music_info_box">
+					<p>歌曲名字:<span>千里之外</span></p>
+					<p>歌手名字:<span>周杰伦</span></p>
+					<p>专辑名字:<span>依然范特西</span></p>
+				</div>
+			</div>
+		</div>
+		<div id="music_lyric">
+			<div id="music_lyric_box">
+				<div id="music_lyric_line"></div>
+				<ul id="music_lyric_content">
+					<!--<li class="lyric active">作曲 : 薛之谦<p>作曲 : 薛之谦</p></p></p></li>-->
+				</ul>
+			</div>
+		</div>
+		<canvas id="spectrum" width="800px" height="600px"></canvas>
+		<div id="music_buttom" class="list_open">
+			<div id="music_console">
+				<div id="music_playback_control">
+					<span id="music_prev"></span>
+					<span id="music_play"></span>
+					<span id="music_next"></span>
+				</div>
+				<div id="music_playback_progress">
+					<span class="play_time" id="now_time">00:00</span>
+					<div id="play_progress_bar">
+						<span id="play_now_progress" class="progress"></span>
+						<span id="play_progress_point" class="progress_point"></span>
+					</div>
+					<span class="play_time" id="all_time">00:00</span>
+				</div>
+				<div id="music_playback_other">
+					<span id="music_loop" class="order"></span>
+					<div id="music_volume">
+						<span id="music_volume_btn" class="center"></span>
+						<div id="music_volume_bar" class="center">
+							<span id="volume_now_progress" class="progress"></span>
+							<span id="volume_progress_point" class="progress_point"></span>
+						</div>
+					</div>
+					<span id="music_list_btn" class="center"></span>
+				</div>
+			</div>
+			<div id="music_list_box">
+				<p class="music_list_title">
+					<span class="music_list_name">播放列表<em>(10)</em></span>
+				</p>
+				<ul id="music_list">
+					<!--<li class="music_item"><span class="music_songname music_active">千里之外</span>-<span class="music_songer">周杰伦</span></li>-->
+				</ul>
+			</div>
+		</div>
+		<div id="bg"></div>
+		<img src="image/music_bg.jpg" class="bg_img"/>
+		<script type="text/javascript" src="js/method.js" ></script>
+		<script type="text/javascript" src="js/music_data.js" ></script>
+		<script type="text/javascript" src="js/music.js" ></script>
+	</body>
+</html>
+<!--
+	需求分析：
+		功能：
+			1.播放音乐/下一曲/上一曲/暂停/音量控制。
+			2.循环模式：单曲/顺序/随机3种模式。
+			3.初始加载本地歌曲数据，搜索添加歌曲数据。
+			4.播放进度控制：进度条控制/歌词控制。
+			5.歌词随播放进度更新。
+-->
