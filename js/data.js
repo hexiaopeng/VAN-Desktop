@@ -121,7 +121,6 @@ function DataTree() {
 DataTree.prototype = {
 	getfile: function(arr,id) {
 		for(var i=0; i<arr.length; i++){
-//			console.log(arr[i].id)
 			if(arr[i].id == id){
 				return arr[i];
 			};
@@ -133,10 +132,31 @@ DataTree.prototype = {
 		};
 		return null;
 	},
-//	getchild:function(arr,)
+	addfile:function(parent,obj){
+		parent.child = parent.child || [];
+		parent.child.push(obj);
+		return parent;
+	},
+	indexOf:function(arr,value){
+		for(var i=0; i<arr.length; i++){
+			if(arr[i] === value){
+				return i;
+			};
+		};
+		return -1;
+	},
+	removefile:function(parent,obj){
+		parent.child = parent.child || [];
+		var index = this.index(parent.child,obj);
+		if(index){
+			parent.child.splice(index,1);
+		};
+		return parent;
+	}
 };
 
 var data = new DataTree();
 //data.getfile(data.nodes,1)
 //console.log(data.nodes.length)
 console.log(data.getfile(data.nodes,16))
+
