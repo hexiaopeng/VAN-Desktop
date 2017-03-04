@@ -119,7 +119,7 @@ function DataTree() {
 };
 
 DataTree.prototype = {
-	getfile: function(arr,id) {
+	getFile: function(arr,id) {
 		for(var i=0; i<arr.length; i++){
 			if(arr[i].id == id){
 				return arr[i];
@@ -132,7 +132,7 @@ DataTree.prototype = {
 		};
 		return null;
 	},
-	addfile:function(parent,obj){
+	addFile:function(parent,obj){
 		parent.child = parent.child || [];
 		parent.child.push(obj);
 		return parent;
@@ -145,18 +145,45 @@ DataTree.prototype = {
 		};
 		return -1;
 	},
-	removefile:function(parent,obj){
+	removeFile:function(obj){
+		var parent = this.getParent(this.nodes,obj);
 		parent.child = parent.child || [];
-		var index = this.index(parent.child,obj);
-		if(index){
+		var index = this.indexOf(parent.child,obj);
+	 	if(index != -1){
 			parent.child.splice(index,1);
 		};
 		return parent;
+	},
+	getParent:function (arr,obj) {
+		for(var i=0; i<arr.length; i++){
+			if(arr[i].id == obj.pid){
+				return arr[i];
+			};
+			if(arr[i].class == 'folder' && arr[i].child){
+				if(arguments.callee(arr[i].child,obj)){
+					return arguments.callee(arr[i].child,obj)
+				};
+			};
+		};
+		return null;
+	},
+	getFileByClass:function (data,cla) {
+		var arr = [];
+		for(var i=0; i<data.length; i++){
+			if(data[i].class == 'folder' && data[i].child){
+				var result = arguments.callee(data[i].child,cla);
+				if(result){
+					for (var j = 0; j < result.length; j++) {
+						arr.push(result[j]);
+					};
+				};
+			};
+			if(data[i].class == cla){
+				arr.push(data[i]);
+			};
+		};
+		return arr;
 	}
 };
 
 var data = new DataTree();
-//data.getfile(data.nodes,1)
-//console.log(data.nodes.length)
-console.log(data.getfile(data.nodes,16))
-
