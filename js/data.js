@@ -1,3 +1,6 @@
+/**
+ * [DataTree description]  定义的数据构造函数
+ */
 function DataTree() {
 	this.nodes = [{
 			title: 'computer',
@@ -117,8 +120,13 @@ function DataTree() {
 		}
 	]
 };
-
 DataTree.prototype = {
+	/**
+	 * [getFile description]  定义的获取数据中指定数据的方法
+	 * @param  {[type]} arr [description]  传入需要查找的数组
+	 * @param  {[type]} id  [description]  传入需要查找的数据id
+	 * @return {[type]}     [description]  如果找到返回找的数据对象，没有则返回null
+	 */
 	getFile: function(arr,id) {
 		for(var i=0; i<arr.length; i++){
 			if(arr[i].id == id){
@@ -132,11 +140,23 @@ DataTree.prototype = {
 		};
 		return null;
 	},
+	/**
+	 * [addFile description]  定义的插入数据方法
+	 * @param  {[type]} parent [description]  传入需要插入的数据的父级
+	 * @param  {[type]} obj    [description]  传入需要插入的数据对象
+	 * @return {[tyoe]}        [description]  返回插入后的父级对象
+	 */
 	addFile:function(parent,obj){
 		parent.child = parent.child || [];
 		parent.child.push(obj);
 		return parent;
 	},
+	/**
+	 * [indexOf description]  定义的查找数组指定值的位置的方法
+	 * @param  {[type]} arr   [description]  传入查找的数组
+	 * @param  {[type]} value [description]  传入需要查找的值
+	 * @return {[type]}       [description]  如果找到返回找到的位置下标，没有找到则返回-1
+	 */
 	indexOf:function(arr,value){
 		for(var i=0; i<arr.length; i++){
 			if(arr[i] === value){
@@ -145,6 +165,11 @@ DataTree.prototype = {
 		};
 		return -1;
 	},
+	/**
+	 * [removeFile description]  定义的移出数据中指定数据的方法
+	 * @param  {[type]} obj [description]  传入需要移出的数据对象
+	 * @return {[type]}     [description]  返回移出后的父级对象
+	 */
 	removeFile:function(obj){
 		var parent = this.getParent(this.nodes,obj);
 		parent.child = parent.child || [];
@@ -154,6 +179,12 @@ DataTree.prototype = {
 		};
 		return parent;
 	},
+	/**
+	 * [getParent description]  定义的获取指定对象的父级的方法
+	 * @param  {[type]} arr [description]  传入数据数组
+	 * @param  {[type]} obj [description]  传入需要获取父级的对象
+	 * @return {[type]}     [description]  返回找到的父级对象，如果没有则返回null
+	 */
 	getParent:function (arr,obj) {
 		for(var i=0; i<arr.length; i++){
 			if(arr[i].id == obj.pid){
@@ -167,6 +198,12 @@ DataTree.prototype = {
 		};
 		return null;
 	},
+	/**
+	 * [getFileByClass description]  定义的获取指定类的数据方法
+	 * @param  {[type]} data [description]  传入查找的数组
+	 * @param  {[type]} cla  [description]  传入需要获取的class类
+	 * @return {[type]}      [description]  返回找到数据的数组，没有找到则返回空数组
+	 */
 	getFileByClass:function (data,cla) {
 		var arr = [];
 		for(var i=0; i<data.length; i++){

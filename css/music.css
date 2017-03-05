@@ -68,10 +68,8 @@ li{
 	top: 0;
 	background: rgba(0,0,0,0.5);
 	z-index: 100;
-	perspective: 600px;
 	-webkit-perspective: 600px;
-	-moz-perspective: 600px;
-	-ms-perspective: 600px;
+	        perspective: 600px;
 }
 .music_title{
 	width: 200px;
@@ -575,4 +573,3 @@ li{
 .list_open{
 	background: rgba(0,0,0,0.3);
 }
-

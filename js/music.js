@@ -1,3 +1,4 @@
+
 var audioE = document.getElementById('audio');
 var musicTop = document.getElementById('music_top');
 var musicSearch = document.getElementById('music_search');
@@ -71,6 +72,7 @@ function loadMusicList() {
 	musicNum.innerHTML = '(' + Data.length + ')';
 };
 loadMusicList();
+var d = new Date();
 
 function loadMusic(num) {
 	for(var i = 0; i < Data.length; i++) {
@@ -84,6 +86,7 @@ function loadMusic(num) {
 	songerName.innerHTML = Data[num].info.songer;
 	albumName.innerHTML = Data[num].info.album;
 	musicLyricContent.style.top = '200px';
+
 	ajax({
 		url: Data[num].lrc,
 		success: function(data) {
