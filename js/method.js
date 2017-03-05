@@ -7,7 +7,7 @@ Method.prototype = {
 	 * [getEle description]  定义的获取元素的方法
 	 * @param  {[type]} Selectors [description]  传入获取元素的选择器
 	 * @return {[type]}           [description]  返回获取到的元素集合
-	 */
+	 */ 
 	getEle:function(Selectors){
 		return Sizzle(Selectors);
 	},
