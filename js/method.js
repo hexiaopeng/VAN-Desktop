@@ -4,14 +4,6 @@ function Method(){
 Method.prototype = {
 	constructor:Method,
 	/**
-	 * [getEle description]  定义的获取元素的方法
-	 * @param  {[type]} Selectors [description]  传入获取元素的选择器
-	 * @return {[type]}           [description]  返回获取到的元素集合
-	 */
-	getEle:function(Selectors){
-		return Sizzle(Selectors);
-	},
-	/**
 	 * [ajax description]定义的ajax方法
 	 * @param  {[type]} obj [description]
 	 *                      传入参数：
@@ -34,7 +26,7 @@ Method.prototype = {
 
 		for (var k in obj) {
 			jsonObj[k] = obj[k];
-		};
+		}
 
 		var xhr = null;
 		try{
@@ -45,7 +37,7 @@ Method.prototype = {
 
 		if (jsonObj.type == 'get') {
 			jsonObj.url += '?' + jsonObj.data;
-		};
+		}
 
 		xhr.open(jsonObj.type,jsonObj.url,true);
 
@@ -54,7 +46,7 @@ Method.prototype = {
 		} else{
 			xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
 			xhr.send(jsonObj.data);
-		};
+		}
 
 		xhr.onreadystatechange = function(){
 
@@ -63,8 +55,8 @@ Method.prototype = {
 					jsonObj.success && jsonObj.success(xhr.responseText);
 				}else{
 					jsonObj.fail && jsonObj.fail(xhr.responseText);
-				};
-			};
+				}
+			}
 		};
 	},
 	/**
@@ -83,16 +75,16 @@ Method.prototype = {
 			var timeArr = lyric.match(timeReg);
 			if (!timeArr) {
 				continue;
-			};
+			}
 			lrcObj.clause = lyric.replace(timeReg,'');
 			for (var k=0; k<timeArr.length; k++) {
 				var t = timeArr[k];
 				var m = Number(String(t.match(/\[\d*/i)).slice(1)),
 					s = Number(String(t.match(/\:\d*/i)).slice(1));
 				lrcObj.time = m * 60 + s;
-			};
+			}
 			lrcArr.push(lrcObj);
-		};
+		}
 		return lrcArr;
 	},
 	/**
@@ -105,8 +97,8 @@ Method.prototype = {
 		for (var i=0; i<arr.length; i++) {
 			if (arr[i] == v) {
 				return i;
-			};
-		};
+			}
+		}
 		return -1;
 	},
 	/**
@@ -115,14 +107,14 @@ Method.prototype = {
 	 * @param {[type]} className [description]  传入需要添加的类名
 	 */
 	addClass:function (obj, className) {
-		if (obj.className == '') {
+		if (obj.className == ''){
 			obj.className = className;
 		} else {
 			var arrClassName = obj.className.split(' ');
 			if ( this.arrIndexOf(arrClassName, className) == -1 ) {
 				obj.className += ' ' + className;
-			};
-		};
+			}
+		}
 	},
 	/**
 	 * [removeClass description]  定义的给指定元素对象移出类名的方法
@@ -136,8 +128,8 @@ Method.prototype = {
 			if ( _index != -1 ) {
 				arrClassName.splice(_index, 1);
 				obj.className = arrClassName.join(' ');
-			};
-		};
+			}
+		}
 	},
 	/**
 	 * [inspectClass description]  定义的检测指定元素对象是否包含指定类名的方法
@@ -153,8 +145,28 @@ Method.prototype = {
 				return true;
 			}else{
 				return false;
+			}
+		}
+	},
+	/**
+	 * [drag description]  定义的拖拽方法
+	 * @param  {[type]} obj    [description]  传入被拖拽的元素对象
+	 * @param  {[type]} downFn [description]  传入鼠标按下执行的函数
+	 * @param  {[type]} moveFn [description]  传入鼠标移动执行的函数
+	 * @param  {[type]} upFn   [description]  传入鼠标抬起执行的函数
+	 * @param  {[type]} This   [description]  传入调用的this对象
+	 */
+	drag:function(obj,downFn,moveFn,upFn,This){
+		obj.onmousedown = function(ev){
+			downFn(ev,This);
+			document.onmousemove = function(ev){
+				moveFn(ev,This);
 			};
-		};
+			document.onmouseup = function(){
+				upFn(ev,This);
+			};
+			return false;
+		}
 	},
 	/**
 	 * [addZero description]  定义的为数字补零的方法
@@ -184,7 +196,7 @@ Method.prototype = {
 	getOffsetToBody:function (obj,attr){
 		if (obj == document.body || obj == null) {
 			return 0;
-		};
+		}
 		return arguments.callee(obj.offsetParent,attr) + obj[attr];
 	},
 	/**
@@ -210,7 +222,7 @@ Method.prototype = {
 			var t = new Date().getTime() - newTime;
 			if(t >= d){
 				t = d;
-			};
+			}
 			for(var attr in j){
 				var b = j[attr].b;
 				var c = j[attr].c;
@@ -219,12 +231,12 @@ Method.prototype = {
 					obj.style[attr] = v;
 				}else{
 					obj.style[attr] = v +'px';
-				};
-			};
+				}
+			}
 			if(t == d){
 				clearInterval(obj.time);
 				endFn && endFn();
-			};
+			}
 		},20);
 	},
 	/**

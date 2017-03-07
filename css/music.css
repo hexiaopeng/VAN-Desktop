@@ -523,7 +523,7 @@ li{
 #music_list_box{
 	width: 1080px;
 	margin: 0 auto;
-	height: 350px;
+	height: 0;
 	border-top: 1px solid rgba(225,225,225,0.8);
 }
 .music_list_title{
