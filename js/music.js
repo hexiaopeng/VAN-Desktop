@@ -105,11 +105,11 @@ Music.prototype = {
           		playNowProgress.style.width = W + 'px';
           		nowTime.innerHTML = $.getTime(W / This.playProgressBarW * audioE.duration);
           },function(ev,This){
-            This.toProgress(ev);
+            This.toProgress(ev,This);
             document.onmousemove = document.onmouseup = null;
         },this);
         playProgressBar.onclick = function(ev) {//初始化进度点击
-          _this.toProgress(ev);
+          _this.toProgress(ev,_this);
         };
         musicVolumeBtn.onclick = function() {//初始化点击静音
             _this.isMute(this);
@@ -382,7 +382,7 @@ Music.prototype = {
      * [toProgress description]  定义的跳至指定进度的方法
      * @param  {[type]} ev [description]  传入ev对象
      */
-    toProgress:function(ev){
+    toProgress:function(ev,This){
       var ev = ev || event;
       var W = ev.clientX - $.getOffsetToBody(playProgressBar, 'offsetLeft');
       if(W > this.playProgressBarW) {
@@ -391,6 +391,8 @@ Music.prototype = {
       if(W < 0) {
         W = 0;
       }
+      playProgressPoint.style.left = W * (This.playProgressBarW - playProgressPoint.offsetWidth) / This.playProgressBarW + 'px';
+      playNowProgress.style.width = W + 'px';
       audioE.currentTime = W / this.playProgressBarW * audioE.duration;
       nowTime.innerHTML = $.getTime(audioE.currentTime);
       this.lrcProgress();
@@ -469,9 +471,9 @@ Music.prototype = {
           meterNum = 800 / (4 + 1), //频谱条数量
           capYPositionArray = []; //将上一画面各帽头的位置保存到这个数组
       ctx = canvas.getContext('2d'),
-      gradient = ctx.createLinearGradient(0, 0, 0, 800);
-      gradient.addColorStop(0, 'rgb(249,5,246)');
-      gradient.addColorStop(1, 'rgb(7,223,245)');
+      gradient = ctx.createLinearGradient(0, 200, 0, 600);
+      gradient.addColorStop(0, 'rgb(27,178,252)');
+      gradient.addColorStop(1, 'rgb(25,235,249)');
       var audioContext=new window.AudioContext();
       var analyser = audioContext.createAnalyser();
       var audioBufferSouceNode = audioContext.createMediaElementSource(audioE);

@@ -162,7 +162,7 @@ Method.prototype = {
 			document.onmousemove = function(ev){
 				moveFn(ev,This);
 			};
-			document.onmouseup = function(){
+			document.onmouseup = function(ev){
 				upFn(ev,This);
 			};
 			return false;
