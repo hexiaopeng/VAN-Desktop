@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+  <div id="video_player">
+    <div id="video_box">
+      <video width="100%" height="100%" id="video" src="video/【飞碟一分钟】一分钟告诉你别把早泄的锅扣在它头上.mp4">
+        当前浏览器不支持 video直接播放,请更换浏览器尝试！
+      </video>
+      <div id="video_control">
+        <div id="progress_bar">
+          <div id="progress_bar_schedile">
+            <span id="progress_point"></span>
+          </div>
+          <div id="prompt_time">00:00</div>
+        </div>
+        <span id="play_time">00:00/00:00</span>
+        <input type="button" name="play" class="play" title="播放"/>
+        <div id="video_control_right">
+          <input type="button" name="volume" class="volume_true" title="音量"/>
+          <div id="volume_bar">
+            <div id="volume_bar_schedile">
+              <span id="volume_point"></span>
+            </div>
+          </div>
+          <input type="button" name="full_screen" id="full_screen" title="全屏"/>
+        </div>
+      </div>
+    </div>
+    <div id="video_list">
+      <div class="list_title">
+        <span class="local_video active">本地视频</span>
+        <span class="play_record">播放记录</span>
+      </div>
+      <div class="list_box">
+        <ul class="local_list">
+          <li>今天吃什么</li>
+          <li>今天吃什么</li>
+          <li>今天吃什么</li>
+          <li>今天吃什么</li>
+          <li>今天吃什么</li>
+        </ul>
+        <ul class="record_list">
+          <li>想吃什么吃什么</li>
+          <li>想吃什么吃什么</li>
+          <li>想吃什么吃什么</li>
+          <li>想吃什么吃什么</li>
+          <li>想吃什么吃什么</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
