@@ -19,9 +19,14 @@
           <div id="prompt_time">00:00</div>
         </div>
         <span id="play_time">00:00/00:00</span>
-        <input type="button" name="play" class="play" title="播放"/>
+        <div class="conyrol_btn">
+          <input type="button" name="stop" class="stop disable" title="停止"/>
+          <input type="button" name="prev" class="prev disable" title="上一个"/>
+          <input type="button" name="play" class="play" title="播放"/>
+          <input type="button" name="next" class="next disable" title="下一个"/>
+        </div>
         <div id="video_control_right">
-          <input type="button" name="volume" class="volume_true" title="音量"/>
+          <input type="button" name="volume" class="volume_true volume_mute" title="音量"/>
           <div id="volume_bar">
             <div id="volume_bar_schedile">
               <span id="volume_point"></span>
@@ -32,6 +37,7 @@
       </div>
     </div>
     <div id="video_list">
+      <div class="list_btn"></div>
       <div class="list_title">
         <span class="local_video active">本地视频</span>
         <span class="play_record">播放记录</span>
@@ -43,6 +49,7 @@
           <li>今天吃什么</li>
           <li>今天吃什么</li>
           <li>今天吃什么</li>
+
         </ul>
         <ul class="record_list">
           <li>想吃什么吃什么</li>

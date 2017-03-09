@@ -12,7 +12,7 @@ body{
   width: 100%;
   height: 100%;
   font-size: 16px;
-  font-family: "微软雅黑";
+  font-family: '微软雅黑';
   overflow: hidden;
   background: black;
   border: 1px solid #fff;
@@ -23,27 +23,30 @@ li{
 #video_player{
   width: 100%;
   height: 100%;
+  position: relative;
 }
 #video_box{
   width: 84%;
   height: 100%;
   float: left;
-  position: relative;
+  position: absolute;;
   overflow: hidden;
+  top: 0;
+  left: 0;
 }
 video{
   background: black;
 }
-.full_screen,.full_screen body,.full_screen #video_box{
+/*.full_screen,.full_screen body,.full_screen #video_box{
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
+}*/
 #video_control{
   width: 100%;
-  height: 60px;
+  height: 80px;
   position: absolute;
-  bottom: -60px;
+  bottom: 0;
   background: rgba(20,20,20,0.6);
 }
 #video_control input:focus{
@@ -51,9 +54,9 @@ video{
 }
 #progress_bar{
   width: 100%;
-  height: 5px;
+  height: 6px;
   position: absolute;
-  top: 3px;
+  top: 6px;
   background: rgb(72,72,72);
 }
 #progress_bar_schedile{
@@ -67,7 +70,7 @@ video{
   border-radius: 3px;
   background: rgb(231,231,231);
   position: absolute;
-  top: -2px;
+  top: -1px;
 }
 #prompt_time{
   width: 50px;
@@ -98,52 +101,116 @@ video{
   font-family: "微软雅黑";
   color: rgb(230,230,230);
 }
-.play{
-  width: 30px;
-  height: 30px;
-  background: url(../image/play.png) no-repeat;
-  background-size: 100% 100%;
-  color: transparent;
-  border: 1px solid rgb(255,255,255);
-  border-radius: 50%;
+.conyrol_btn{
+  width: 210px;
+  height: 50px;
+  left: 50%;
   position: absolute;
   bottom: 10px;
-  left: 50%;
-  margin-left: -15px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: -105px;
 }
-.pause{
-  width: 30px;
-  height: 30px;
-  background: url(../image/pause.png) no-repeat;
+.conyrol_btn input{
+  width: 35px;
+  height: 35px;
+  border: none;
+  margin: 0 5px;
+}
+.conyrol_btn .prev{
+  background: url(../image/play_btn_prev.png) no-repeat;
   background-size: 100% 100%;
-  color: transparent;
-  border: 1px solid rgb(255,255,255);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -15px;
+  position: relative;
+  top: -7px;
+}
+.conyrol_btn .prev:hover{
+  background: url(../image/play_btn_prev_hover.png) no-repeat;
+  background-size: 100% 100%;
+}
+.conyrol_btn .prev.disable{
+  background: url(../image/play_btn_prev_disable.png) no-repeat;
+  background-size: 100% 100%;
+}
+.conyrol_btn .stop{
+  background: url(../image/play_btn_stop.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: -7px;
+}
+.conyrol_btn .stop:hover{
+  background: url(../image/play_btn_stop_hover.png) no-repeat;
+  background-size: 100% 100%;
+}
+.conyrol_btn .stop.disable{
+  background: url(../image/play_btn_stop_disable.png) no-repeat;
+  background-size: 100% 100%;
+}
+.conyrol_btn .next{
+  background: url(../image/play_btn_next.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: -7px;
+}
+.conyrol_btn .next:hover{
+  background: url(../image/play_btn_next_hover.png) no-repeat;
+  background-size: 100% 100%;
+}
+.conyrol_btn .next.disable{
+  background: url(../image/play_btn_next_disable.png) no-repeat;
+  background-size: 100% 100%;
+}
+.conyrol_btn .play{
+  width: 50px;
+  height: 50px;
+  background: url(../image/play_rdi_btn_play.png) no-repeat;
+  background-size: 100% 100%;
+}
+.play:hover{
+  background: url(../image/play_rdi_btn_play_hover.png) no-repeat;
+  background-size: 100% 100%;
+}
+.conyrol_btn .pause{
+  width: 50px;
+  height: 50px;
+  background: url(../image/play_rdi_btn_pause.png) no-repeat;
+  background-size: 100% 100%;
+}
+.pause:hover{
+  background: url(../image/play_rdi_btn_pause_hover.png) no-repeat;
+  background-size: 100% 100%;
 }
 #video_control_right{
   width: 150px;
   height: 30px;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   right: 20px;
 }
 .volume_true{
   float: left;
-  width: 30px;
-  height: 30px;
-  background: url(../image/volume.png) no-repeat;
+  width: 20px;
+  height: 20px;
   background-size: 100% 100%;
   color: transparent;
   border: none;
+  margin-top: 5px;
+}
+.volume_small{
+  background: url(../image/volume_small.png) no-repeat;
+  background-size: 100% 100%;
+}
+.volume_big{
+  background: url(../image/volume_big.png) no-repeat;
+  background-size: 100% 100%;
+}
+.volume_mute{
+  background: url(../image/volume_mute.png) no-repeat;
+  background-size: 100% 100%;
 }
 #volume_bar{
   float: left;
   width: 80px;
-  height: 5px;
+  height: 6px;
   position: relative;
   background: rgb(72,72,72);
   border-radius: 2px;
@@ -157,12 +224,12 @@ video{
   border-bottom-left-radius: 2px;
 }
 #volume_point{
-  width: 8px;
+  width: 12px;
   height: 8px;
   border-radius: 3px;
   background: rgb(231,231,231);
   position: absolute;
-  top: -2px;
+  top: -1px;
 }
 #full_screen{
   float: right;
@@ -180,12 +247,16 @@ video{
   height: 100%;
   float: left;
   color: rgb(145, 145, 146);
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 #video_list .list_title{
   width: 100%;
-  height: 40px;
-  line-height: 40px;
+  height: 39px;
+  line-height: 39px;
   background-color: rgb(32,32,32);
+  padding-bottom: 1px;
 }
 #video_list .list_title span{
   float: left;
@@ -201,9 +272,31 @@ video{
 #video_list .list_box{
   width: 100%;
   height: 660px;
+  position: relative;
+  background-color: rgb(33,33,33);
+  overflow-x: hidden;
 }
 #video_list .list_box ul{
   width: 100%;
-  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
   float: left;
+  position: absolute;
+  top: 0;
+  padding: 10px 0;
+}
+#video_list .list_box .local_list{
+  left: 0;
+}
+#video_list .list_box .record_list{
+  left: 100%;
+}
+#video_list .list_box ul li{
+  font-size: 13px;
+  text-indent: 16px;
+  color: rgb(116, 116, 116);
+  line-height: 25px;
+}
+#video_list .list_box ul li:hover{
+  background-color: rgb(45, 45, 46);
 }
