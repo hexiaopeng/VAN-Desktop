@@ -47,20 +47,20 @@ var audioE = document.getElementById('audio'),
  * [Music description]  构造函数Music；
  */
 function Music() {
-    this.musicId = window.location.search || data.getFileByClass(data.nodes, 'music')[0].id;  //获取传入search的id
-    this.data = data.getFileByClass(data.nodes, 'music');//获取到音乐数据
-    this.num = data.indexOf(this.data, data.getFile(this.data, this.musicId));//获取当先播放音乐在数组中的下标
-    this.musicItems = null;//音乐列表
-    this.musicSongnames = [];//音乐列表中的歌名
-    this.loopArr = [];//循环数组
-    this.timer = null;//定时器
-    this.playProgressBarW = playProgressBar.offsetWidth;//进度条长度
-    this.musicVolumeBarW = musicVolumeBar.offsetWidth;//音量条长度
-    this.lrcArr = null;//解析到的歌词数组li
-    this.loopType = 'order';//当前播放模式：默认为循环
-    this.oldVolume = null;//存下旧的音量
-    this.overLrc = true;//歌词加载状态
-    this.drafting = true;//是否拖拽状态
+  this.musicId = window.location.search ||  data.getFileByClass(data.nodes, 'music')[0].id;  //获取传入search的id
+  this.data = data.getFileByClass(data.nodes, 'music');//获取到音乐数据
+  this.num = data.indexOf(this.data, data.getFile(this.data, this.musicId));//获取当先播放音乐在数组中的下标
+  this.musicItems = null;//音乐列表
+  this.musicSongnames = [];//音乐列表中的歌名
+  this.loopArr = [];//循环数组
+  this.timer = null;//定时器
+  this.playProgressBarW = playProgressBar.offsetWidth;//进度条长度
+  this.musicVolumeBarW = musicVolumeBar.offsetWidth;//音量条长度
+  this.lrcArr = null;//解析到的歌词数组li
+  this.loopType = 'order';//当前播放模式：默认为循环
+  this.oldVolume = null;//存下旧的音量
+  this.overLrc = true;//歌词加载状态
+  this.drafting = true;//是否拖拽状态
 }
 
 Music.prototype = {

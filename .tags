@@ -1,0 +1,709 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+*	H:\wamp\www\VAN-Desktop\css\index.css	/^*{$/;"	function	line:1
+li	H:\wamp\www\VAN-Desktop\css\index.css	/^li{$/;"	function	line:5
+img	H:\wamp\www\VAN-Desktop\css\index.css	/^img{$/;"	function	line:8
+html	H:\wamp\www\VAN-Desktop\css\index.css	/^html{$/;"	function	line:11
+body	H:\wamp\www\VAN-Desktop\css\index.css	/^body{$/;"	function	line:18
+#star	H:\wamp\www\VAN-Desktop\css\index.css	/^#star{$/;"	function	line:25
+#mask	H:\wamp\www\VAN-Desktop\css\index.css	/^#mask{$/;"	function	line:32
+#lock_screen	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen{$/;"	function	line:41
+#lock_screen .cortana_prompt	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .cortana_prompt{$/;"	function	line:48
+#lock_screen .cortana	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .cortana{$/;"	function	line:55
+#lock_screen .prompt	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .prompt{$/;"	function	line:63
+#lock_screen .time	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .time{$/;"	function	line:71
+#lock_screen .time_day	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .time_day{$/;"	function	line:78
+#lock_screen .time_date	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .time_date{$/;"	function	line:86
+#lock_screen .bottom_notice	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .bottom_notice{$/;"	function	line:94
+#lock_screen div	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen div{$/;"	function	line:101
+#lock_screen .set_full_screen	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .set_full_screen{$/;"	function	line:107
+#lock_screen .network	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .network{$/;"	function	line:111
+#lock_screen .Electricity	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .Electricity{$/;"	function	line:114
+#lock_screen .full_screen_box	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .full_screen_box{$/;"	function	line:117
+#lock_screen .full_screen_box li	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .full_screen_box li{$/;"	function	line:130
+#lock_screen .full_screen_box li:hover	H:\wamp\www\VAN-Desktop\css\index.css	/^#lock_screen .full_screen_box li:hover{$/;"	function	line:136
+#login_system	H:\wamp\www\VAN-Desktop\css\index.css	/^#login_system{$/;"	function	line:139
+#login_system .user_login	H:\wamp\www\VAN-Desktop\css\index.css	/^#login_system .user_login{$/;"	function	line:146
+#login_system .user_pic	H:\wamp\www\VAN-Desktop\css\index.css	/^#login_system .user_pic{$/;"	function	line:155
+#login_system .user_name	H:\wamp\www\VAN-Desktop\css\index.css	/^#login_system .user_name{$/;"	function	line:164
+#login_system .user_login_btn	H:\wamp\www\VAN-Desktop\css\index.css	/^#login_system .user_login_btn{$/;"	function	line:172
+#login_system #login	H:\wamp\www\VAN-Desktop\css\index.css	/^#login_system #login{$/;"	function	line:180
+#desktop	H:\wamp\www\VAN-Desktop\css\index.css	/^#desktop{$/;"	function	line:190
+#desktopBg	H:\wamp\www\VAN-Desktop\css\index.css	/^#desktopBg{$/;"	function	line:195
+.bg	H:\wamp\www\VAN-Desktop\css\index.css	/^.bg{$/;"	function	line:204
+#taskbar	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar{$/;"	function	line:207
+#taskbar #windows	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar #windows{$/;"	function	line:215
+#taskbar #windows .windowsCon	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar #windows .windowsCon{$/;"	function	line:221
+#taskbar #windows .windowsConZ	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar #windows .windowsConZ{$/;"	function	line:227
+#taskbar #webMenu	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar #webMenu{$/;"	function	line:236
+#taskbar #webMenu div	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar #webMenu div{$/;"	function	line:242
+#taskbar .webMenu_search	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar .webMenu_search{$/;"	function	line:247
+#taskbar .webMenu_music	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar .webMenu_music{$/;"	function	line:254
+#taskbar .webMenu_game	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar .webMenu_game{$/;"	function	line:261
+#taskbar .webMenu_book	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar .webMenu_book{$/;"	function	line:269
+#taskbar_time	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar_time{$/;"	function	line:276
+#taskbar_time .time	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar_time .time{$/;"	function	line:283
+#taskbar_time .date	H:\wamp\www\VAN-Desktop\css\index.css	/^#taskbar_time .date{$/;"	function	line:286
+#search	H:\wamp\www\VAN-Desktop\css\index.css	/^#search{$/;"	function	line:289
+#search .searchLogo	H:\wamp\www\VAN-Desktop\css\index.css	/^#search .searchLogo{$/;"	function	line:297
+#search .searchBox	H:\wamp\www\VAN-Desktop\css\index.css	/^#search .searchBox{$/;"	function	line:306
+#webMenu .nowMenu	H:\wamp\www\VAN-Desktop\css\index.css	/^#webMenu .nowMenu{$/;"	function	line:314
+#search .searchBox .searchText	H:\wamp\www\VAN-Desktop\css\index.css	/^#search .searchBox .searchText{$/;"	function	line:319
+#search .searchBox .searchText.focus	H:\wamp\www\VAN-Desktop\css\index.css	/^#search .searchBox .searchText.focus{$/;"	function	line:332
+#search .searchBox .searchText.active	H:\wamp\www\VAN-Desktop\css\index.css	/^#search .searchBox .searchText.active{$/;"	function	line:337
+#search .searchBox .searchBtn	H:\wamp\www\VAN-Desktop\css\index.css	/^#search .searchBox .searchBtn{$/;"	function	line:342
+#search .searchBox .searchBtn.focus	H:\wamp\www\VAN-Desktop\css\index.css	/^#search .searchBox .searchBtn.focus{$/;"	function	line:356
+#webApp	H:\wamp\www\VAN-Desktop\css\index.css	/^#webApp{$/;"	function	line:361
+#webApp>div	H:\wamp\www\VAN-Desktop\css\index.css	/^#webApp>div{$/;"	function	line:368
+#webApp>div .appLogo	H:\wamp\www\VAN-Desktop\css\index.css	/^#webApp>div .appLogo{$/;"	function	line:374
+#webApp>div .appTitle	H:\wamp\www\VAN-Desktop\css\index.css	/^#webApp>div .appTitle{$/;"	function	line:380
+#webApp .music .appLogo	H:\wamp\www\VAN-Desktop\css\index.css	/^#webApp .music .appLogo{$/;"	function	line:389
+#webApp .book .appLogo	H:\wamp\www\VAN-Desktop\css\index.css	/^#webApp .book .appLogo{$/;"	function	line:392
+#webApp .game .appLogo	H:\wamp\www\VAN-Desktop\css\index.css	/^#webApp .game .appLogo{$/;"	function	line:395
+.appBox	H:\wamp\www\VAN-Desktop\css\index.css	/^.appBox{$/;"	function	line:403
+.appBox .appBoxTop	H:\wamp\www\VAN-Desktop\css\index.css	/^.appBox .appBoxTop{$/;"	function	line:411
+.appBox .appBoxTitle	H:\wamp\www\VAN-Desktop\css\index.css	/^.appBox .appBoxTitle{$/;"	function	line:416
+.appBox .appBoxMenu	H:\wamp\www\VAN-Desktop\css\index.css	/^.appBox .appBoxMenu{$/;"	function	line:425
+.appBox .appBoxHidden	H:\wamp\www\VAN-Desktop\css\index.css	/^.appBox .appBoxHidden{$/;"	function	line:429
+.appBox .appBoxClose	H:\wamp\www\VAN-Desktop\css\index.css	/^.appBox .appBoxClose{$/;"	function	line:436
+#clock	H:\wamp\www\VAN-Desktop\css\index.css	/^#clock{$/;"	function	line:444
+#calendar	H:\wamp\www\VAN-Desktop\css\index.css	/^#calendar{$/;"	function	line:450
+*	H:\wamp\www\VAN-Desktop\css\music.css	/^*{$/;"	function	line:1
+html	H:\wamp\www\VAN-Desktop\css\music.css	/^html{$/;"	function	line:5
+body	H:\wamp\www\VAN-Desktop\css\music.css	/^body{$/;"	function	line:9
+li	H:\wamp\www\VAN-Desktop\css\music.css	/^li{$/;"	function	line:38
+.center	H:\wamp\www\VAN-Desktop\css\music.css	/^.center{$/;"	function	line:41
+#bg	H:\wamp\www\VAN-Desktop\css\music.css	/^#bg{$/;"	function	line:45
+.bg_img	H:\wamp\www\VAN-Desktop\css\music.css	/^.bg_img{$/;"	function	line:54
+#music_top	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_top{$/;"	function	line:64
+.music_title	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_title{$/;"	function	line:74
+#music_search_box	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_box{$/;"	function	line:84
+#music_search	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search{$/;"	function	line:100
+#music_search:focus	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search:focus{$/;"	function	line:111
+#music_search_btn	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_btn{$/;"	function	line:114
+#music_search_btn i	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_btn i{$/;"	function	line:120
+#music_search_content	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_content{$/;"	function	line:128
+@keyframes searchOpen	H:\wamp\www\VAN-Desktop\css\music.css	/^@keyframes searchOpen{$/;"	function	line:140
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(90deg);opacity: 0;}$/;"	function	line:141
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:142
+@-webkit-keyframes searchOpen	H:\wamp\www\VAN-Desktop\css\music.css	/^@-webkit-keyframes searchOpen{$/;"	function	line:144
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(90deg);opacity: 0;}$/;"	function	line:145
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:146
+@-moz-keyframes searchOpen	H:\wamp\www\VAN-Desktop\css\music.css	/^@-moz-keyframes searchOpen{$/;"	function	line:148
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(90deg);opacity: 0;}$/;"	function	line:149
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:150
+@-ms-keyframes searchOpen	H:\wamp\www\VAN-Desktop\css\music.css	/^@-ms-keyframes searchOpen{$/;"	function	line:152
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(90deg);opacity: 0;}$/;"	function	line:153
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:154
+@keyframes searchClose	H:\wamp\www\VAN-Desktop\css\music.css	/^@keyframes searchClose{$/;"	function	line:156
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:157
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(-90deg);opacity: 0;}$/;"	function	line:158
+@-webkit-keyframes searchClose	H:\wamp\www\VAN-Desktop\css\music.css	/^@-webkit-keyframes searchClose{$/;"	function	line:160
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:161
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(-90deg);opacity: 0;}$/;"	function	line:162
+@-moz-keyframes searchClose	H:\wamp\www\VAN-Desktop\css\music.css	/^@-moz-keyframes searchClose{$/;"	function	line:164
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:165
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(-90deg);opacity: 0;}$/;"	function	line:166
+@-ms-keyframes searchClose	H:\wamp\www\VAN-Desktop\css\music.css	/^@-ms-keyframes searchClose{$/;"	function	line:168
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateX(0deg);opacity: 1;}$/;"	function	line:169
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateX(-90deg);opacity: 0;}$/;"	function	line:170
+#music_search_content.open	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_content.open{$/;"	function	line:172
+#music_search_content.close	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_content.close{$/;"	function	line:176
+#music_search_prompt	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_prompt{$/;"	function	line:180
+#close_search	H:\wamp\www\VAN-Desktop\css\music.css	/^#close_search{$/;"	function	line:189
+#music_search_list	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_list{$/;"	function	line:198
+#music_search_list li	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_list li{$/;"	function	line:204
+#music_search_list li:first-child	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_search_list li:first-child{$/;"	function	line:215
+#music_album	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_album{$/;"	function	line:220
+#play_needle	H:\wamp\www\VAN-Desktop\css\music.css	/^#play_needle{$/;"	function	line:230
+.music_album_box	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_album_box{$/;"	function	line:233
+#music_disc_box	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_disc_box{$/;"	function	line:246
+#music_disc_box img	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_disc_box img{$/;"	function	line:258
+#music_disc_box #music_album_img	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_disc_box #music_album_img{$/;"	function	line:267
+#music_disc_box #music_album_img.play	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_disc_box #music_album_img.play{$/;"	function	line:292
+@keyframes albumRotate	H:\wamp\www\VAN-Desktop\css\music.css	/^@keyframes albumRotate{$/;"	function	line:298
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateZ(0deg)}$/;"	function	line:299
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateZ(360deg)}$/;"	function	line:300
+@-webkit-keyframes albumRotate	H:\wamp\www\VAN-Desktop\css\music.css	/^@-webkit-keyframes albumRotate{$/;"	function	line:302
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateZ(0deg)}$/;"	function	line:303
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateZ(360deg)}$/;"	function	line:304
+@-moz-keyframes albumRotate	H:\wamp\www\VAN-Desktop\css\music.css	/^@-moz-keyframes albumRotate{$/;"	function	line:306
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateZ(0deg)}$/;"	function	line:307
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateZ(360deg)}$/;"	function	line:308
+@-ms-keyframes albumRotate	H:\wamp\www\VAN-Desktop\css\music.css	/^@-ms-keyframes albumRotate{$/;"	function	line:310
+from	H:\wamp\www\VAN-Desktop\css\music.css	/^	from{transform: rotateZ(0deg)}$/;"	function	line:311
+to	H:\wamp\www\VAN-Desktop\css\music.css	/^	to{transform: rotateZ(360deg)}$/;"	function	line:312
+#music_info_box	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_info_box{$/;"	function	line:314
+#music_lyric	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_lyric{$/;"	function	line:320
+#music_lyric_box	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_lyric_box{$/;"	function	line:327
+#music_lyric_line	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_lyric_line{$/;"	function	line:334
+#music_lyric_content	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_lyric_content{$/;"	function	line:342
+#music_lyric_content .lyric	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_lyric_content .lyric{$/;"	function	line:351
+#music_lyric_content .active	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_lyric_content .active{$/;"	function	line:357
+#spectrum	H:\wamp\www\VAN-Desktop\css\music.css	/^#spectrum{$/;"	function	line:362
+#music_buttom	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_buttom{$/;"	function	line:370
+#music_console	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_console{$/;"	function	line:377
+#music_playback_control	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_playback_control{$/;"	function	line:383
+#music_playback_control span	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_playback_control span{$/;"	function	line:390
+#music_prev	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_prev{$/;"	function	line:397
+#music_play	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_play{$/;"	function	line:403
+#music_play.play	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_play.play{$/;"	function	line:410
+#music_next	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_next{$/;"	function	line:413
+#music_playback_progress	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_playback_progress{$/;"	function	line:420
+#music_playback_progress .play_time	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_playback_progress .play_time{$/;"	function	line:427
+#play_progress_bar	H:\wamp\www\VAN-Desktop\css\music.css	/^#play_progress_bar{$/;"	function	line:434
+.progress	H:\wamp\www\VAN-Desktop\css\music.css	/^.progress{$/;"	function	line:444
+.progress_point	H:\wamp\www\VAN-Desktop\css\music.css	/^.progress_point{$/;"	function	line:453
+#music_playback_other	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_playback_other{$/;"	function	line:462
+#music_loop	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_loop{$/;"	function	line:469
+#music_loop.random	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_loop.random{$/;"	function	line:478
+#music_loop.order	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_loop.order{$/;"	function	line:481
+#music_loop.single	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_loop.single{$/;"	function	line:484
+#music_volume	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_volume{$/;"	function	line:487
+#music_volume_btn	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_volume_btn{$/;"	function	line:492
+#music_volume_btn.mute	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_volume_btn.mute{$/;"	function	line:500
+#music_volume_bar	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_volume_bar{$/;"	function	line:503
+#music_list_btn	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_list_btn{$/;"	function	line:514
+#music_list_box	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_list_box{$/;"	function	line:523
+.music_list_title	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_list_title{$/;"	function	line:529
+.music_list_name	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_list_name{$/;"	function	line:535
+.music_list_name em	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_list_name em{$/;"	function	line:538
+#music_list	H:\wamp\www\VAN-Desktop\css\music.css	/^#music_list{$/;"	function	line:541
+.music_item	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_item{$/;"	function	line:548
+.music_item:first-child	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_item:first-child{$/;"	function	line:557
+.music_songname	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_songname{$/;"	function	line:560
+.music_active:before	H:\wamp\www\VAN-Desktop\css\music.css	/^.music_active:before{$/;"	function	line:564
+.list_open	H:\wamp\www\VAN-Desktop\css\music.css	/^.list_open{$/;"	function	line:573
+*	H:\wamp\www\VAN-Desktop\css\video.css	/^*{$/;"	function	line:1
+html	H:\wamp\www\VAN-Desktop\css\video.css	/^html{$/;"	function	line:5
+body	H:\wamp\www\VAN-Desktop\css\video.css	/^body{$/;"	function	line:11
+li	H:\wamp\www\VAN-Desktop\css\video.css	/^li{$/;"	function	line:20
+#video_player	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_player{$/;"	function	line:23
+#video_box	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box{$/;"	function	line:28
+#video_box #video	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box #video{$/;"	function	line:37
+#video_box #video_control	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box #video_control{$/;"	function	line:40
+#video_control input:focus	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control input:focus{$/;"	function	line:47
+#video_control .progress_bar	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .progress_bar{$/;"	function	line:50
+#video_control .progress_bar_schedile	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .progress_bar_schedile{$/;"	function	line:57
+#video_control .progress_point	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .progress_point{$/;"	function	line:62
+#video_control .prompt_time	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .prompt_time{$/;"	function	line:70
+#video_control .prompt_time:after	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .prompt_time:after{$/;"	function	line:83
+#video_control .play_time	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .play_time{$/;"	function	line:91
+#video_control .conyrol_btn	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn{$/;"	function	line:99
+#video_control .conyrol_btn input	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn input{$/;"	function	line:109
+#video_control .conyrol_btn .prev	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .prev{$/;"	function	line:115
+#video_control .conyrol_btn .prev:hover	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .prev:hover{$/;"	function	line:121
+#video_control .conyrol_btn .prev.disable	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .prev.disable{$/;"	function	line:125
+#video_control .conyrol_btn .stop	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .stop{$/;"	function	line:129
+#video_control .conyrol_btn .stop:hover	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .stop:hover{$/;"	function	line:135
+#video_control .conyrol_btn .stop.disable	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .stop.disable{$/;"	function	line:139
+#video_control .conyrol_btn .next	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .next{$/;"	function	line:143
+#video_control .conyrol_btn .next:hover	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .next:hover{$/;"	function	line:149
+#video_control .conyrol_btn .next.disable	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .next.disable{$/;"	function	line:153
+#video_control .conyrol_btn .play	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .play{$/;"	function	line:157
+#video_control .play:hover	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .play:hover{$/;"	function	line:163
+#video_control .conyrol_btn .pause	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .conyrol_btn .pause{$/;"	function	line:167
+#video_control .pause:hover	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .pause:hover{$/;"	function	line:173
+#video_control .video_control_right	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .video_control_right{$/;"	function	line:177
+#video_control .volume_true	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .volume_true{$/;"	function	line:184
+#video_control .volume_small	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .volume_small{$/;"	function	line:193
+#video_control .volume_big	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .volume_big{$/;"	function	line:197
+#video_control .volume_mute	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .volume_mute{$/;"	function	line:201
+#video_control .volume_bar	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .volume_bar{$/;"	function	line:205
+#video_control .volume_bar_schedile	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .volume_bar_schedile{$/;"	function	line:215
+#video_control .volume_point	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .volume_point{$/;"	function	line:221
+#video_control .full_screen	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_control .full_screen{$/;"	function	line:229
+#video_box.true .progress_bar	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box.true .progress_bar,$/;"	function	line:240
+#video_box.true .play_time	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box.true .play_time,$/;"	function	line:241
+#video_box.true .full_screen	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box.true .full_screen{$/;"	function	line:242
+#video_box.false .progress_bar	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box.false .progress_bar,$/;"	function	line:245
+#video_box.false .play_time	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box.false .play_time,$/;"	function	line:246
+#video_box.false .full_screen	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_box.false .full_screen{$/;"	function	line:247
+#video_list	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list{$/;"	function	line:250
+#video_list .list_btn	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_btn{$/;"	function	line:259
+#video_list .list_btn:hover	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_btn:hover{$/;"	function	line:274
+#video_list .list_title	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_title{$/;"	function	line:280
+#video_list .list_title span	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_title span{$/;"	function	line:287
+#video_list .list_title span.active	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_title span.active{$/;"	function	line:295
+#video_list .list_box	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_box{$/;"	function	line:298
+#video_list .list_box ul	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_box ul{$/;"	function	line:305
+#video_list .list_box .local_list	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_box .local_list{$/;"	function	line:314
+#video_list .list_box .record_list	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_box .record_list{$/;"	function	line:317
+#video_list .list_box ul li	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_box ul li{$/;"	function	line:320
+#video_list .list_box ul li:hover	H:\wamp\www\VAN-Desktop\css\video.css	/^#video_list .list_box ul li:hover{$/;"	function	line:326
+html	H:\wamp\www\VAN-Desktop\index.html	/^<html>$/;"	function	line:2
+head	H:\wamp\www\VAN-Desktop\index.html	/^	<head>$/;"	function	line:3
+meta	H:\wamp\www\VAN-Desktop\index.html	/^		<meta charset="UTF-8">$/;"	function	line:4
+title	H:\wamp\www\VAN-Desktop\index.html	/^		<title>Desktop<\/title>$/;"	function	line:5
+link	H:\wamp\www\VAN-Desktop\index.html	/^		<link rel="stylesheet" type="text\/css" href="css\/index.css"\/>$/;"	function	line:6
+body	H:\wamp\www\VAN-Desktop\index.html	/^	<body>$/;"	function	line:8
+div	H:\wamp\www\VAN-Desktop\index.html	/^		<div id="star">$/;"	function	line:9
+div	H:\wamp\www\VAN-Desktop\index.html	/^			<div id="mask"><\/div>$/;"	function	line:10
+div	H:\wamp\www\VAN-Desktop\index.html	/^			<div id="lock_screen">$/;"	function	line:11
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div class="cortana_prompt">$/;"	function	line:12
+span	H:\wamp\www\VAN-Desktop\index.html	/^					<span class="cortana"><\/span>$/;"	function	line:13
+p	H:\wamp\www\VAN-Desktop\index.html	/^					<p class="prompt">欢迎使用VAN-桌面，为了更好的使用体验，建议打开全屏模式！<\/p>aaaaa$/;"	function	line:14
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div class="time">$/;"	function	line:16
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="time_day">10:10<\/div>$/;"	function	line:17
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="time_date">2月24日,星期五<\/div>$/;"	function	line:18
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div class="bottom_notice">$/;"	function	line:20
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="set_full_screen">$/;"	function	line:21
+ul	H:\wamp\www\VAN-Desktop\index.html	/^						<ul class="full_screen_box">$/;"	function	line:22
+li	H:\wamp\www\VAN-Desktop\index.html	/^							<li class="full_screen_btn">全屏(推荐)<\/li>$/;"	function	line:23
+li	H:\wamp\www\VAN-Desktop\index.html	/^							<li class="commonly_btn">一般<\/li>$/;"	function	line:24
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="network"><\/div>$/;"	function	line:27
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="Electricity"><\/div>$/;"	function	line:28
+div	H:\wamp\www\VAN-Desktop\index.html	/^			<div id="login_system">$/;"	function	line:32
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div class="user_login">$/;"	function	line:33
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="user_pic"><\/div>$/;"	function	line:34
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="user_name">Administrator<\/div>$/;"	function	line:35
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="user_login_btn">$/;"	function	line:36
+input	H:\wamp\www\VAN-Desktop\index.html	/^						<input type="button" id="login" value="登录" \/>$/;"	function	line:37
+div	H:\wamp\www\VAN-Desktop\index.html	/^		<div id="desktop">$/;"	function	line:43
+div	H:\wamp\www\VAN-Desktop\index.html	/^			<div id="desktopBg"><\/div>$/;"	function	line:44
+img	H:\wamp\www\VAN-Desktop\index.html	/^			<img class="bg" src="image\/desktop_bg3.jpg"\/>$/;"	function	line:45
+div	H:\wamp\www\VAN-Desktop\index.html	/^			<div id="search">$/;"	function	line:46
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div class="searchLogo"><\/div>$/;"	function	line:47
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div class="searchBox">$/;"	function	line:48
+input	H:\wamp\www\VAN-Desktop\index.html	/^					<input type="text" class="searchText"\/>$/;"	function	line:49
+input	H:\wamp\www\VAN-Desktop\index.html	/^					<input type="button" class="searchBtn" value="百度一下">$/;"	function	line:50
+div	H:\wamp\www\VAN-Desktop\index.html	/^			<div id="taskbar">$/;"	function	line:53
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div id="windows">$/;"	function	line:54
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="windowsCon"><\/div>$/;"	function	line:55
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="windowsConZ"><\/div>$/;"	function	line:56
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div id="webMenu">$/;"	function	line:58
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div id="taskbar_time">$/;"	function	line:60
+p	H:\wamp\www\VAN-Desktop\index.html	/^					<p class="time"><\/p>$/;"	function	line:61
+p	H:\wamp\www\VAN-Desktop\index.html	/^					<p class="date"><\/p>$/;"	function	line:62
+canvas	H:\wamp\www\VAN-Desktop\index.html	/^					<canvas id="clock" width="200px" height="200px"><\/canvas>$/;"	function	line:63
+div	H:\wamp\www\VAN-Desktop\index.html	/^			<div id="webApp">$/;"	function	line:66
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div data-name="music" class="music">$/;"	function	line:67
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="appLogo"><\/div>$/;"	function	line:68
+p	H:\wamp\www\VAN-Desktop\index.html	/^					<p class="appTitle">音乐<\/p>$/;"	function	line:69
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div data-name="book" class="book">$/;"	function	line:71
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="appLogo"><\/div>$/;"	function	line:72
+p	H:\wamp\www\VAN-Desktop\index.html	/^					<p class="appTitle">电子书<\/p>$/;"	function	line:73
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div data-name="game" class="game">$/;"	function	line:75
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="appLogo"><\/div>$/;"	function	line:76
+p	H:\wamp\www\VAN-Desktop\index.html	/^					<p class="appTitle">别踩白块儿<\/p>$/;"	function	line:77
+div	H:\wamp\www\VAN-Desktop\index.html	/^				<div class="appBoxTop">$/;"	function	line:81
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="appBoxTitle">音乐<\/div>$/;"	function	line:82
+div	H:\wamp\www\VAN-Desktop\index.html	/^					<div class="appBoxMenu">$/;"	function	line:83
+div	H:\wamp\www\VAN-Desktop\index.html	/^						<div class="appBoxHidden"><\/div>$/;"	function	line:84
+div	H:\wamp\www\VAN-Desktop\index.html	/^						<div class="appBoxClose"><\/div>$/;"	function	line:85
+script	H:\wamp\www\VAN-Desktop\index.html	/^	<script type="text\/javascript" src="js\/index.js" ><\/script>$/;"	function	line:91
+script	H:\wamp\www\VAN-Desktop\index.html	/^	<script type="text\/javascript" src="js\/data.js" ><\/script>$/;"	function	line:92
+DataTree	H:\wamp\www\VAN-Desktop\js\data.js	/^function DataTree() {$/;"	function	line:4
+DataTree	H:\wamp\www\VAN-Desktop\js\data.js	/^function DataTree() {$/;"	class	line:4
+getFile	H:\wamp\www\VAN-Desktop\js\data.js	/^	getFile: function(arr,id) {$/;"	function	line:181
+DataTree.getFile	H:\wamp\www\VAN-Desktop\js\data.js	/^	getFile: function(arr,id) {$/;"	method	line:181
+addFile	H:\wamp\www\VAN-Desktop\js\data.js	/^	addFile:function(parent,obj){$/;"	function	line:200
+DataTree.addFile	H:\wamp\www\VAN-Desktop\js\data.js	/^	addFile:function(parent,obj){$/;"	method	line:200
+indexOf	H:\wamp\www\VAN-Desktop\js\data.js	/^	indexOf:function(arr,value){$/;"	function	line:211
+DataTree.indexOf	H:\wamp\www\VAN-Desktop\js\data.js	/^	indexOf:function(arr,value){$/;"	method	line:211
+removeFile	H:\wamp\www\VAN-Desktop\js\data.js	/^	removeFile:function(obj){$/;"	function	line:224
+DataTree.removeFile	H:\wamp\www\VAN-Desktop\js\data.js	/^	removeFile:function(obj){$/;"	method	line:224
+getParent	H:\wamp\www\VAN-Desktop\js\data.js	/^	getParent:function (arr,obj) {$/;"	function	line:239
+DataTree.getParent	H:\wamp\www\VAN-Desktop\js\data.js	/^	getParent:function (arr,obj) {$/;"	method	line:239
+getFileByClass	H:\wamp\www\VAN-Desktop\js\data.js	/^	getFileByClass:function (data,cla) {$/;"	function	line:258
+DataTree.getFileByClass	H:\wamp\www\VAN-Desktop\js\data.js	/^	getFileByClass:function (data,cla) {$/;"	method	line:258
+Method	H:\wamp\www\VAN-Desktop\js\method.js	/^function Method(){$/;"	function	line:1
+Method	H:\wamp\www\VAN-Desktop\js\method.js	/^function Method(){$/;"	function	line:1
+Method	H:\wamp\www\VAN-Desktop\js\method.js	/^Method.prototype = {$/;"	class	line:4
+Method.constructor	H:\wamp\www\VAN-Desktop\js\method.js	/^	constructor:Method,$/;"	property	line:5
+ajax	H:\wamp\www\VAN-Desktop\js\method.js	/^	ajax:function (obj){$/;"	function	line:16
+Method.ajax	H:\wamp\www\VAN-Desktop\js\method.js	/^	ajax:function (obj){$/;"	method	line:16
+Method.ajax.jsonObj.type	H:\wamp\www\VAN-Desktop\js\method.js	/^			type:'get',$/;"	property	line:18
+Method.ajax.jsonObj.url	H:\wamp\www\VAN-Desktop\js\method.js	/^			url:this.url,$/;"	property	line:19
+success	H:\wamp\www\VAN-Desktop\js\method.js	/^			success:function(text){},$/;"	function	line:21
+fail	H:\wamp\www\VAN-Desktop\js\method.js	/^			fail:function(){$/;"	function	line:22
+xhr	H:\wamp\www\VAN-Desktop\js\method.js	/^		var xhr = null;$/;"	variable	line:31
+onreadystatechange	H:\wamp\www\VAN-Desktop\js\method.js	/^		xhr.onreadystatechange = function(){$/;"	function	line:51
+xhr.onreadystatechange	H:\wamp\www\VAN-Desktop\js\method.js	/^		xhr.onreadystatechange = function(){$/;"	function	line:51
+parseLyric	H:\wamp\www\VAN-Desktop\js\method.js	/^	parseLyric:function (lrc){$/;"	function	line:67
+lrcArr	H:\wamp\www\VAN-Desktop\js\method.js	/^		var lrcArr = [];$/;"	variable	line:69
+arrIndexOf	H:\wamp\www\VAN-Desktop\js\method.js	/^	arrIndexOf:function (arr, v) {$/;"	function	line:96
+addClass	H:\wamp\www\VAN-Desktop\js\method.js	/^	addClass:function (obj, className) {$/;"	function	line:109
+removeClass	H:\wamp\www\VAN-Desktop\js\method.js	/^	removeClass:function (obj, className) {$/;"	function	line:124
+inspectClass	H:\wamp\www\VAN-Desktop\js\method.js	/^	inspectClass:function (obj, className) {$/;"	function	line:140
+drag	H:\wamp\www\VAN-Desktop\js\method.js	/^	drag:function(obj,downFn,moveFn,upFn,This){$/;"	function	line:159
+onmousedown	H:\wamp\www\VAN-Desktop\js\method.js	/^		obj.onmousedown = function(ev){$/;"	function	line:160
+onmousemove	H:\wamp\www\VAN-Desktop\js\method.js	/^			document.onmousemove = function(ev){$/;"	function	line:162
+document.onmousemove	H:\wamp\www\VAN-Desktop\js\method.js	/^			document.onmousemove = function(ev){$/;"	function	line:162
+onmouseup	H:\wamp\www\VAN-Desktop\js\method.js	/^			document.onmouseup = function(ev){$/;"	function	line:165
+document.onmouseup	H:\wamp\www\VAN-Desktop\js\method.js	/^			document.onmouseup = function(ev){$/;"	function	line:165
+onmousedown	H:\wamp\www\VAN-Desktop\js\method.js	/^	},$/;"	function	line:150
+addZero	H:\wamp\www\VAN-Desktop\js\method.js	/^	addZero:function (num){$/;"	function	line:176
+getTime	H:\wamp\www\VAN-Desktop\js\method.js	/^	getTime:function (num){$/;"	function	line:184
+iM	H:\wamp\www\VAN-Desktop\js\method.js	/^		var iM = Math.floor(num\/60);$/;"	variable	line:186
+iS	H:\wamp\www\VAN-Desktop\js\method.js	/^		var iS = Math.floor(num%60);$/;"	variable	line:187
+getOffsetToBody	H:\wamp\www\VAN-Desktop\js\method.js	/^	getOffsetToBody:function (obj,attr){$/;"	function	line:196
+move	H:\wamp\www\VAN-Desktop\js\method.js	/^	move:function (obj,attrs,duration,fx,endFn){$/;"	function	line:210
+d	H:\wamp\www\VAN-Desktop\js\method.js	/^		var d = duration;$/;"	variable	line:219
+linear	H:\wamp\www\VAN-Desktop\js\method.js	/^		linear: function (t, b, c, d){  \/\/匀速$/;"	function	line:247
+easeIn	H:\wamp\www\VAN-Desktop\js\method.js	/^		easeIn: function(t, b, c, d){  \/\/加速曲线$/;"	function	line:250
+easeOut	H:\wamp\www\VAN-Desktop\js\method.js	/^		easeOut: function(t, b, c, d){  \/\/减速曲线$/;"	function	line:253
+easeBoth	H:\wamp\www\VAN-Desktop\js\method.js	/^		easeBoth: function(t, b, c, d){  \/\/加速减速曲线$/;"	function	line:256
+easeInStrong	H:\wamp\www\VAN-Desktop\js\method.js	/^		easeInStrong: function(t, b, c, d){  \/\/加加速曲线$/;"	function	line:262
+easeOutStrong	H:\wamp\www\VAN-Desktop\js\method.js	/^		easeOutStrong: function(t, b, c, d){  \/\/减减速曲线$/;"	function	line:265
+easeBothStrong	H:\wamp\www\VAN-Desktop\js\method.js	/^		easeBothStrong: function(t, b, c, d){  \/\/加加速减减速曲线$/;"	function	line:268
+elasticIn	H:\wamp\www\VAN-Desktop\js\method.js	/^		elasticIn: function(t, b, c, d, a, p){  \/\/正弦衰减曲线（弹动渐入）$/;"	function	line:274
+elasticOut	H:\wamp\www\VAN-Desktop\js\method.js	/^		elasticOut: function(t, b, c, d, a, p){    \/\/正弦增强曲线（弹动渐出）$/;"	function	line:292
+elasticBoth	H:\wamp\www\VAN-Desktop\js\method.js	/^		elasticBoth: function(t, b, c, d, a, p){$/;"	function	line:310
+backIn	H:\wamp\www\VAN-Desktop\js\method.js	/^		backIn: function(t, b, c, d, s){     \/\/回退加速（回退渐入）$/;"	function	line:334
+backOut	H:\wamp\www\VAN-Desktop\js\method.js	/^		backOut: function(t, b, c, d, s){$/;"	function	line:340
+backBoth	H:\wamp\www\VAN-Desktop\js\method.js	/^		backBoth: function(t, b, c, d, s){$/;"	function	line:346
+bounceIn	H:\wamp\www\VAN-Desktop\js\method.js	/^		bounceIn: function(t, b, c, d){    \/\/弹球减振（弹球渐出）$/;"	function	line:355
+bounceOut	H:\wamp\www\VAN-Desktop\js\method.js	/^		bounceOut: function(t, b, c, d){$/;"	function	line:358
+bounceBoth	H:\wamp\www\VAN-Desktop\js\method.js	/^		bounceBoth: function(t, b, c, d){$/;"	function	line:368
+ajax	H:\wamp\www\VAN-Desktop\js\method1.js	/^function ajax(obj){$/;"	function	line:1
+ajax.jsonObj.type	H:\wamp\www\VAN-Desktop\js\method1.js	/^		type:'get',$/;"	property	line:3
+ajax.jsonObj.url	H:\wamp\www\VAN-Desktop\js\method1.js	/^		url:this.url,$/;"	property	line:4
+success	H:\wamp\www\VAN-Desktop\js\method1.js	/^		success:function(text){},$/;"	function	line:6
+fail	H:\wamp\www\VAN-Desktop\js\method1.js	/^		fail:function(){$/;"	function	line:7
+ajax	H:\wamp\www\VAN-Desktop\js\method1.js	/^function ajax(obj){$/;"	function	line:1
+xhr	H:\wamp\www\VAN-Desktop\js\method1.js	/^	var xhr = null;$/;"	variable	line:16
+onreadystatechange	H:\wamp\www\VAN-Desktop\js\method1.js	/^	xhr.onreadystatechange = function(){$/;"	function	line:36
+xhr.onreadystatechange	H:\wamp\www\VAN-Desktop\js\method1.js	/^	xhr.onreadystatechange = function(){$/;"	function	line:36
+parseLyric	H:\wamp\www\VAN-Desktop\js\method1.js	/^function parseLyric(lrc){$/;"	function	line:48
+parseLyric	H:\wamp\www\VAN-Desktop\js\method1.js	/^function parseLyric(lrc){$/;"	function	line:48
+arrIndexOf	H:\wamp\www\VAN-Desktop\js\method1.js	/^function arrIndexOf(arr, v) {$/;"	function	line:72
+arrIndexOf	H:\wamp\www\VAN-Desktop\js\method1.js	/^function arrIndexOf(arr, v) {$/;"	function	line:72
+addClass	H:\wamp\www\VAN-Desktop\js\method1.js	/^function addClass(obj, className) {$/;"	function	line:88
+addClass	H:\wamp\www\VAN-Desktop\js\method1.js	/^function addClass(obj, className) {$/;"	function	line:88
+removeClass	H:\wamp\www\VAN-Desktop\js\method1.js	/^function removeClass(obj, className) {$/;"	function	line:108
+removeClass	H:\wamp\www\VAN-Desktop\js\method1.js	/^function removeClass(obj, className) {$/;"	function	line:108
+inspectClass	H:\wamp\www\VAN-Desktop\js\method1.js	/^function inspectClass(obj, className) {$/;"	function	line:126
+inspectClass	H:\wamp\www\VAN-Desktop\js\method1.js	/^function inspectClass(obj, className) {$/;"	function	line:126
+addZero	H:\wamp\www\VAN-Desktop\js\method1.js	/^function addZero(num){$/;"	function	line:147
+addZero	H:\wamp\www\VAN-Desktop\js\method1.js	/^function addZero(num){$/;"	function	line:147
+getTime	H:\wamp\www\VAN-Desktop\js\method1.js	/^function getTime(num){$/;"	function	line:151
+getTime	H:\wamp\www\VAN-Desktop\js\method1.js	/^function getTime(num){$/;"	function	line:151
+getOffsetToBody	H:\wamp\www\VAN-Desktop\js\method1.js	/^function getOffsetToBody(obj,attr){$/;"	function	line:159
+getOffsetToBody	H:\wamp\www\VAN-Desktop\js\method1.js	/^function getOffsetToBody(obj,attr){$/;"	function	line:159
+move	H:\wamp\www\VAN-Desktop\js\method1.js	/^function move(obj,attrs,duration,fx,endFn){$/;"	function	line:176
+move	H:\wamp\www\VAN-Desktop\js\method1.js	/^function move(obj,attrs,duration,fx,endFn){$/;"	function	line:176
+linear	H:\wamp\www\VAN-Desktop\js\method1.js	/^    linear: function (t, b, c, d){  \/\/匀速$/;"	function	line:227
+Tween.linear	H:\wamp\www\VAN-Desktop\js\method1.js	/^    linear: function (t, b, c, d){  \/\/匀速$/;"	method	line:227
+easeIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeIn: function(t, b, c, d){  \/\/加速曲线$/;"	function	line:230
+Tween.easeIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeIn: function(t, b, c, d){  \/\/加速曲线$/;"	method	line:230
+easeOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeOut: function(t, b, c, d){  \/\/减速曲线$/;"	function	line:233
+Tween.easeOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeOut: function(t, b, c, d){  \/\/减速曲线$/;"	method	line:233
+easeBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeBoth: function(t, b, c, d){  \/\/加速减速曲线$/;"	function	line:236
+Tween.easeBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeBoth: function(t, b, c, d){  \/\/加速减速曲线$/;"	method	line:236
+easeInStrong	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeInStrong: function(t, b, c, d){  \/\/加加速曲线$/;"	function	line:242
+Tween.easeInStrong	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeInStrong: function(t, b, c, d){  \/\/加加速曲线$/;"	method	line:242
+easeOutStrong	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeOutStrong: function(t, b, c, d){  \/\/减减速曲线$/;"	function	line:245
+Tween.easeOutStrong	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeOutStrong: function(t, b, c, d){  \/\/减减速曲线$/;"	method	line:245
+easeBothStrong	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeBothStrong: function(t, b, c, d){  \/\/加加速减减速曲线$/;"	function	line:248
+Tween.easeBothStrong	H:\wamp\www\VAN-Desktop\js\method1.js	/^    easeBothStrong: function(t, b, c, d){  \/\/加加速减减速曲线$/;"	method	line:248
+elasticIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    elasticIn: function(t, b, c, d, a, p){  \/\/正弦衰减曲线（弹动渐入）$/;"	function	line:254
+Tween.elasticIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    elasticIn: function(t, b, c, d, a, p){  \/\/正弦衰减曲线（弹动渐入）$/;"	method	line:254
+elasticOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    elasticOut: function(t, b, c, d, a, p){    \/\/正弦增强曲线（弹动渐出）$/;"	function	line:272
+Tween.elasticOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    elasticOut: function(t, b, c, d, a, p){    \/\/正弦增强曲线（弹动渐出）$/;"	method	line:272
+elasticBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    elasticBoth: function(t, b, c, d, a, p){$/;"	function	line:290
+Tween.elasticBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    elasticBoth: function(t, b, c, d, a, p){$/;"	method	line:290
+backIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    backIn: function(t, b, c, d, s){     \/\/回退加速（回退渐入）$/;"	function	line:314
+Tween.backIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    backIn: function(t, b, c, d, s){     \/\/回退加速（回退渐入）$/;"	method	line:314
+backOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    backOut: function(t, b, c, d, s){$/;"	function	line:320
+Tween.backOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    backOut: function(t, b, c, d, s){$/;"	method	line:320
+backBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    backBoth: function(t, b, c, d, s){$/;"	function	line:326
+Tween.backBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    backBoth: function(t, b, c, d, s){$/;"	method	line:326
+bounceIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    bounceIn: function(t, b, c, d){    \/\/弹球减振（弹球渐出）$/;"	function	line:335
+Tween.bounceIn	H:\wamp\www\VAN-Desktop\js\method1.js	/^    bounceIn: function(t, b, c, d){    \/\/弹球减振（弹球渐出）$/;"	method	line:335
+bounceOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    bounceOut: function(t, b, c, d){$/;"	function	line:338
+Tween.bounceOut	H:\wamp\www\VAN-Desktop\js\method1.js	/^    bounceOut: function(t, b, c, d){$/;"	method	line:338
+bounceBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    bounceBoth: function(t, b, c, d){$/;"	function	line:348
+Tween.bounceBoth	H:\wamp\www\VAN-Desktop\js\method1.js	/^    bounceBoth: function(t, b, c, d){$/;"	method	line:348
+audioE	H:\wamp\www\VAN-Desktop\js\music.js	/^var audioE = document.getElementById('audio'),$/;"	variable	line:10
+Music	H:\wamp\www\VAN-Desktop\js\music.js	/^function Music() {$/;"	function	line:49
+Music	H:\wamp\www\VAN-Desktop\js\music.js	/^function Music() {$/;"	class	line:49
+Music.constructor	H:\wamp\www\VAN-Desktop\js\music.js	/^    constructor: Music,$/;"	property	line:67
+init	H:\wamp\www\VAN-Desktop\js\music.js	/^    init: function() {$/;"	function	line:71
+Music.init	H:\wamp\www\VAN-Desktop\js\music.js	/^    init: function() {$/;"	method	line:71
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicPrev.onclick = function() {\/\/初始化上一曲$/;"	function	line:75
+musicPrev	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicPrev.onclick = function() {\/\/初始化上一曲$/;"	method	line:75
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicPlay.onclick = function() {\/\/初始化播放暂停$/;"	function	line:78
+musicPlay	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicPlay.onclick = function() {\/\/初始化播放暂停$/;"	method	line:78
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicNext.onclick = function() {\/\/初始化下一曲$/;"	function	line:81
+musicNext	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicNext.onclick = function() {\/\/初始化下一曲$/;"	method	line:81
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicLoop.onclick = function() {\/\/初始化循环模式切换$/;"	function	line:84
+musicLoop	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicLoop.onclick = function() {\/\/初始化循环模式切换$/;"	method	line:84
+onloadedmetadata	H:\wamp\www\VAN-Desktop\js\music.js	/^        audioE.onloadedmetadata = function() {\/\/初始化歌曲加载完毕$/;"	function	line:87
+audioE	H:\wamp\www\VAN-Desktop\js\music.js	/^        audioE.onloadedmetadata = function() {\/\/初始化歌曲加载完毕$/;"	method	line:87
+onended	H:\wamp\www\VAN-Desktop\js\music.js	/^        audioE.onended = function() {\/\/初始化歌曲播放完毕$/;"	function	line:90
+audioE	H:\wamp\www\VAN-Desktop\js\music.js	/^        audioE.onended = function() {\/\/初始化歌曲播放完毕$/;"	method	line:90
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        playProgressBar.onclick = function(ev) {\/\/初始化进度点击$/;"	function	line:111
+playProgressBar	H:\wamp\www\VAN-Desktop\js\music.js	/^        playProgressBar.onclick = function(ev) {\/\/初始化进度点击$/;"	method	line:111
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicVolumeBtn.onclick = function() {\/\/初始化点击静音$/;"	function	line:114
+musicVolumeBtn	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicVolumeBtn.onclick = function() {\/\/初始化点击静音$/;"	method	line:114
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicVolumeBar.onclick = function(ev) {\/\/初始化音量点击$/;"	function	line:127
+musicVolumeBar	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicVolumeBar.onclick = function(ev) {\/\/初始化音量点击$/;"	method	line:127
+onclick	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicListBtn.onclick = function() {\/\/初始化点击展开列表$/;"	function	line:130
+musicListBtn	H:\wamp\www\VAN-Desktop\js\music.js	/^        musicListBtn.onclick = function() {\/\/初始化点击展开列表$/;"	method	line:130
+loadMusicList	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadMusicList: function() {$/;"	function	line:180
+Music.loadMusicList	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadMusicList: function() {$/;"	method	line:180
+this.musicItems	H:\wamp\www\VAN-Desktop\js\music.js	/^            this.musicItems[j].onclick = function () {$/;"	method	line:198
+loadMusic	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadMusic: function(num) {$/;"	function	line:209
+Music.loadMusic	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadMusic: function(num) {$/;"	method	line:209
+loadLrc	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadLrc: function(obj) {$/;"	function	line:230
+Music.loadLrc	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadLrc: function(obj) {$/;"	method	line:230
+success	H:\wamp\www\VAN-Desktop\js\music.js	/^            success: function(data) {$/;"	function	line:234
+fail	H:\wamp\www\VAN-Desktop\js\music.js	/^            fail: function() {$/;"	function	line:250
+playMusic	H:\wamp\www\VAN-Desktop\js\music.js	/^    playMusic: function() {$/;"	function	line:265
+Music.playMusic	H:\wamp\www\VAN-Desktop\js\music.js	/^    playMusic: function() {$/;"	method	line:265
+prev	H:\wamp\www\VAN-Desktop\js\music.js	/^    prev: function() {$/;"	function	line:281
+Music.prev	H:\wamp\www\VAN-Desktop\js\music.js	/^    prev: function() {$/;"	method	line:281
+playBtn	H:\wamp\www\VAN-Desktop\js\music.js	/^    playBtn: function() {$/;"	function	line:292
+Music.playBtn	H:\wamp\www\VAN-Desktop\js\music.js	/^    playBtn: function() {$/;"	method	line:292
+next	H:\wamp\www\VAN-Desktop\js\music.js	/^    next: function() {$/;"	function	line:309
+Music.next	H:\wamp\www\VAN-Desktop\js\music.js	/^    next: function() {$/;"	method	line:309
+loopTab	H:\wamp\www\VAN-Desktop\js\music.js	/^    loopTab: function() {$/;"	function	line:319
+Music.loopTab	H:\wamp\www\VAN-Desktop\js\music.js	/^    loopTab: function() {$/;"	method	line:319
+loadEnd	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadEnd: function() {$/;"	function	line:341
+Music.loadEnd	H:\wamp\www\VAN-Desktop\js\music.js	/^    loadEnd: function() {$/;"	method	line:341
+playEnd	H:\wamp\www\VAN-Desktop\js\music.js	/^    playEnd: function() {$/;"	function	line:349
+Music.playEnd	H:\wamp\www\VAN-Desktop\js\music.js	/^    playEnd: function() {$/;"	method	line:349
+lrcProgress	H:\wamp\www\VAN-Desktop\js\music.js	/^    lrcProgress:function(){$/;"	function	line:361
+Music.lrcProgress	H:\wamp\www\VAN-Desktop\js\music.js	/^    lrcProgress:function(){$/;"	method	line:361
+toProgress	H:\wamp\www\VAN-Desktop\js\music.js	/^    toProgress:function(ev,This){$/;"	function	line:385
+Music.toProgress	H:\wamp\www\VAN-Desktop\js\music.js	/^    toProgress:function(ev,This){$/;"	method	line:385
+isMute	H:\wamp\www\VAN-Desktop\js\music.js	/^    isMute:function(This){$/;"	function	line:405
+Music.isMute	H:\wamp\www\VAN-Desktop\js\music.js	/^    isMute:function(This){$/;"	method	line:405
+toVolume	H:\wamp\www\VAN-Desktop\js\music.js	/^    toVolume:function(ev){$/;"	function	line:422
+Music.toVolume	H:\wamp\www\VAN-Desktop\js\music.js	/^    toVolume:function(ev){$/;"	method	line:422
+openList	H:\wamp\www\VAN-Desktop\js\music.js	/^    openList:function(){$/;"	function	line:443
+Music.openList	H:\wamp\www\VAN-Desktop\js\music.js	/^    openList:function(){$/;"	method	line:443
+closeList	H:\wamp\www\VAN-Desktop\js\music.js	/^    closeList:function(){$/;"	function	line:452
+Music.closeList	H:\wamp\www\VAN-Desktop\js\music.js	/^    closeList:function(){$/;"	method	line:452
+drawSpectrum	H:\wamp\www\VAN-Desktop\js\music.js	/^    drawSpectrum:function(){$/;"	function	line:463
+Music.drawSpectrum	H:\wamp\www\VAN-Desktop\js\music.js	/^    drawSpectrum:function(){$/;"	method	line:463
+drawMeter	H:\wamp\www\VAN-Desktop\js\music.js	/^      var drawMeter = function() {$/;"	function	line:483
+Music.drawSpectrum.drawMeter	H:\wamp\www\VAN-Desktop\js\music.js	/^      var drawMeter = function() {$/;"	function	line:483
+audioE	H:\wamp\www\VAN-Desktop\js\music1.js	/^var audioE = document.getElementById('audio');$/;"	variable	line:1
+musicTop	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicTop = document.getElementById('music_top');$/;"	variable	line:2
+musicSearch	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicSearch = document.getElementById('music_search');$/;"	variable	line:3
+musicSearchBtn	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicSearchBtn = document.getElementById('music_search_btn');$/;"	variable	line:4
+musicSearchContent	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicSearchContent = document.getElementById('music_search_content');$/;"	variable	line:5
+closeSearch	H:\wamp\www\VAN-Desktop\js\music1.js	/^var closeSearch = document.getElementById('close_search');$/;"	variable	line:6
+musicSearchList	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicSearchList = document.getElementById('music_search_list');$/;"	variable	line:7
+musicAlbum	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicAlbum = document.getElementById('music_album');$/;"	variable	line:8
+musicAlbumImg	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicAlbumImg = document.getElementById('music_album_img');$/;"	variable	line:9
+musicDiscImg	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicDiscImg = document.getElementById('music_disc_img');$/;"	variable	line:10
+musicInfoBox	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicInfoBox = document.getElementById('music_info_box');$/;"	variable	line:11
+songName	H:\wamp\www\VAN-Desktop\js\music1.js	/^var songName = musicInfoBox.getElementsByTagName('span')[0];$/;"	variable	line:12
+songerName	H:\wamp\www\VAN-Desktop\js\music1.js	/^var songerName = musicInfoBox.getElementsByTagName('span')[1];$/;"	variable	line:13
+albumName	H:\wamp\www\VAN-Desktop\js\music1.js	/^var albumName = musicInfoBox.getElementsByTagName('span')[2];$/;"	variable	line:14
+musicLyric	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicLyric = document.getElementById('music_lyric');$/;"	variable	line:15
+musicLyricBox	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicLyricBox = document.getElementById('music_lyric_box');$/;"	variable	line:16
+musicLyricLine	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicLyricLine = document.getElementById('music_lyric_line');$/;"	variable	line:17
+musicLyricContent	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicLyricContent = document.getElementById('music_lyric_content');$/;"	variable	line:18
+musicPrev	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicPrev = document.getElementById('music_prev');$/;"	variable	line:20
+musicPlay	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicPlay = document.getElementById('music_play');$/;"	variable	line:21
+musicNext	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicNext = document.getElementById('music_next');$/;"	variable	line:22
+nowTime	H:\wamp\www\VAN-Desktop\js\music1.js	/^var nowTime = document.getElementById('now_time');$/;"	variable	line:23
+playProgressBar	H:\wamp\www\VAN-Desktop\js\music1.js	/^var playProgressBar = document.getElementById('play_progress_bar');$/;"	variable	line:24
+playNowProgress	H:\wamp\www\VAN-Desktop\js\music1.js	/^var playNowProgress = document.getElementById('play_now_progress');$/;"	variable	line:25
+playProgressPoint	H:\wamp\www\VAN-Desktop\js\music1.js	/^var playProgressPoint = document.getElementById('play_progress_point');$/;"	variable	line:26
+allTime	H:\wamp\www\VAN-Desktop\js\music1.js	/^var allTime = document.getElementById('all_time');$/;"	variable	line:27
+musicLoop	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicLoop = document.getElementById('music_loop');$/;"	variable	line:28
+musicVolumeBtn	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicVolumeBtn = document.getElementById('music_volume_btn');$/;"	variable	line:29
+musicVolumeBar	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicVolumeBar = document.getElementById('music_volume_bar');$/;"	variable	line:30
+volumeNowProgress	H:\wamp\www\VAN-Desktop\js\music1.js	/^var volumeNowProgress = document.getElementById('volume_now_progress');$/;"	variable	line:31
+volumeProgressPoint	H:\wamp\www\VAN-Desktop\js\music1.js	/^var volumeProgressPoint = document.getElementById('volume_progress_point');$/;"	variable	line:32
+musicListBtn	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicListBtn = document.getElementById('music_list_btn');$/;"	variable	line:33
+musicListBox	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicListBox = document.getElementById('music_list_box');$/;"	variable	line:34
+musicList	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicList = document.getElementById('music_list');$/;"	variable	line:35
+musicNum	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicNum = document.getElementsByClassName('music_list_name')[0].getElementsByTagName('em')[0];$/;"	variable	line:36
+musicItems	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicItems = null;$/;"	variable	line:37
+musicSongnames	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicSongnames = [];$/;"	variable	line:38
+loopArr	H:\wamp\www\VAN-Desktop\js\music1.js	/^var loopArr = [];$/;"	variable	line:39
+num	H:\wamp\www\VAN-Desktop\js\music1.js	/^var num = 0;$/;"	variable	line:40
+timer	H:\wamp\www\VAN-Desktop\js\music1.js	/^var timer = null;$/;"	variable	line:41
+playProgressBarW	H:\wamp\www\VAN-Desktop\js\music1.js	/^var playProgressBarW = playProgressBar.offsetWidth;$/;"	variable	line:42
+musicVolumeBarW	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicVolumeBarW = musicVolumeBar.offsetWidth;$/;"	variable	line:43
+lrcArr	H:\wamp\www\VAN-Desktop\js\music1.js	/^var lrcArr = null;$/;"	variable	line:44
+lis	H:\wamp\www\VAN-Desktop\js\music1.js	/^var lis = null;$/;"	variable	line:45
+loopType	H:\wamp\www\VAN-Desktop\js\music1.js	/^var loopType = 'order';$/;"	variable	line:46
+oldVolume	H:\wamp\www\VAN-Desktop\js\music1.js	/^var oldVolume = null;$/;"	variable	line:47
+musicKey	H:\wamp\www\VAN-Desktop\js\music1.js	/^var musicKey = null;$/;"	variable	line:48
+loadLrc	H:\wamp\www\VAN-Desktop\js\music1.js	/^var loadLrc = true;$/;"	variable	line:49
+drafting	H:\wamp\www\VAN-Desktop\js\music1.js	/^var drafting = true;$/;"	variable	line:50
+loadMusicList	H:\wamp\www\VAN-Desktop\js\music1.js	/^function loadMusicList() {$/;"	function	line:52
+musicItems	H:\wamp\www\VAN-Desktop\js\music1.js	/^		musicItems[i].onclick = function() {$/;"	function	line:66
+loadMusicList	H:\wamp\www\VAN-Desktop\js\music1.js	/^function loadMusicList() {$/;"	function	line:52
+loadMusic	H:\wamp\www\VAN-Desktop\js\music1.js	/^function loadMusic(num) {$/;"	function	line:76
+success	H:\wamp\www\VAN-Desktop\js\music1.js	/^		success: function(data) {$/;"	function	line:91
+fail	H:\wamp\www\VAN-Desktop\js\music1.js	/^		fail: function() {$/;"	function	line:108
+loadMusic	H:\wamp\www\VAN-Desktop\js\music1.js	/^function loadMusic(num) {$/;"	function	line:76
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicPrev.onclick = function() {$/;"	function	line:123
+musicPrev.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicPrev.onclick = function() {$/;"	function	line:123
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicPlay.onclick = function() {$/;"	function	line:132
+musicPlay.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicPlay.onclick = function() {$/;"	class	line:132
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicNext.onclick = function() {$/;"	function	line:147
+musicNext.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicNext.onclick = function() {$/;"	function	line:147
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicLoop.onclick = function() {$/;"	function	line:155
+musicLoop.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicLoop.onclick = function() {$/;"	function	line:155
+onloadedmetadata	H:\wamp\www\VAN-Desktop\js\music1.js	/^audioE.onloadedmetadata = function() {$/;"	function	line:174
+audioE.onloadedmetadata	H:\wamp\www\VAN-Desktop\js\music1.js	/^audioE.onloadedmetadata = function() {$/;"	function	line:174
+playMusic	H:\wamp\www\VAN-Desktop\js\music1.js	/^function playMusic() {$/;"	function	line:181
+playMusic	H:\wamp\www\VAN-Desktop\js\music1.js	/^function playMusic() {$/;"	function	line:181
+onended	H:\wamp\www\VAN-Desktop\js\music1.js	/^audioE.onended = function() {$/;"	function	line:206
+audioE.onended	H:\wamp\www\VAN-Desktop\js\music1.js	/^audioE.onended = function() {$/;"	function	line:206
+onmousedown	H:\wamp\www\VAN-Desktop\js\music1.js	/^playProgressBar.onmousedown = function() {$/;"	function	line:216
+onmousemove	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmousemove = function(ev) {$/;"	function	line:218
+document.onmousemove	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmousemove = function(ev) {$/;"	function	line:218
+onmouseup	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmouseup = function(ev) {$/;"	function	line:231
+document.onmouseup	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmouseup = function(ev) {$/;"	function	line:231
+playProgressBar.onmousedown	H:\wamp\www\VAN-Desktop\js\music1.js	/^playProgressBar.onmousedown = function() {$/;"	function	line:216
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^playProgressBar.onclick = function(ev) {$/;"	function	line:266
+playProgressBar.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^playProgressBar.onclick = function(ev) {$/;"	function	line:266
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicVolumeBtn.onclick = function() {$/;"	function	line:293
+musicVolumeBtn.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicVolumeBtn.onclick = function() {$/;"	function	line:293
+onmousedown	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicVolumeBar.onmousedown = function() {$/;"	function	line:307
+onmousemove	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmousemove = function(ev) {$/;"	function	line:309
+onmouseup	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmouseup = function(ev) {$/;"	function	line:327
+musicVolumeBar.onmousedown	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicVolumeBar.onmousedown = function() {$/;"	function	line:307
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicVolumeBar.onclick = function(ev) {$/;"	function	line:336
+musicVolumeBar.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicVolumeBar.onclick = function(ev) {$/;"	function	line:336
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicListBtn.onclick = function() {$/;"	function	line:349
+musicListBtn.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicListBtn.onclick = function() {$/;"	class	line:349
+onmousedown	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicLyricBox.onmousedown = function(ev) {$/;"	function	line:365
+onmousemove	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmousemove = function(ev) {$/;"	function	line:371
+onmouseup	H:\wamp\www\VAN-Desktop\js\music1.js	/^	document.onmouseup = function() {$/;"	function	line:390
+musicLyricBox.onmousedown	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicLyricBox.onmousedown = function(ev) {$/;"	function	line:365
+analysis	H:\wamp\www\VAN-Desktop\js\music1.js	/^function analysis(data) {$/;"	function	line:408
+analysis	H:\wamp\www\VAN-Desktop\js\music1.js	/^function analysis(data) {$/;"	function	line:408
+getMusicData	H:\wamp\www\VAN-Desktop\js\music1.js	/^function getMusicData(data) {$/;"	function	line:434
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^			li.onclick = function() {$/;"	function	line:447
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^				musicItem.onclick = function() {$/;"	function	line:468
+musicItem.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^				musicItem.onclick = function() {$/;"	function	line:468
+li.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^			li.onclick = function() {$/;"	function	line:447
+getMusicData	H:\wamp\www\VAN-Desktop\js\music1.js	/^function getMusicData(data) {$/;"	function	line:434
+jsonCallback	H:\wamp\www\VAN-Desktop\js\music1.js	/^function jsonCallback(data) {$/;"	function	line:480
+jsonCallback	H:\wamp\www\VAN-Desktop\js\music1.js	/^function jsonCallback(data) {$/;"	function	line:480
+getUrlKey	H:\wamp\www\VAN-Desktop\js\music1.js	/^function getUrlKey() {$/;"	function	line:484
+getUrlKey	H:\wamp\www\VAN-Desktop\js\music1.js	/^function getUrlKey() {$/;"	function	line:484
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicSearchBtn.onclick = function() {$/;"	function	line:492
+musicSearchBtn.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^musicSearchBtn.onclick = function() {$/;"	function	line:492
+onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^closeSearch.onclick = function() {$/;"	function	line:501
+closeSearch.onclick	H:\wamp\www\VAN-Desktop\js\music1.js	/^closeSearch.onclick = function() {$/;"	function	line:501
+fn	H:\wamp\www\VAN-Desktop\js\music1.js	/^function fn() {$/;"	function	line:512
+drawMeter	H:\wamp\www\VAN-Desktop\js\music1.js	/^    var drawMeter = function() {$/;"	function	line:533
+fn.drawMeter	H:\wamp\www\VAN-Desktop\js\music1.js	/^    var drawMeter = function() {$/;"	function	line:533
+fn	H:\wamp\www\VAN-Desktop\js\music1.js	/^function fn() {$/;"	function	line:512
+videoBox	H:\wamp\www\VAN-Desktop\js\video.js	/^var videoBox = document.getElementById('video_box'),$/;"	variable	line:1
+Video	H:\wamp\www\VAN-Desktop\js\video.js	/^function Video(){$/;"	function	line:26
+Video	H:\wamp\www\VAN-Desktop\js\video.js	/^function Video(){$/;"	class	line:26
+Video.constructor	H:\wamp\www\VAN-Desktop\js\video.js	/^  constructor:Video,$/;"	property	line:33
+init	H:\wamp\www\VAN-Desktop\js\video.js	/^  init:function(){$/;"	function	line:34
+Video.init	H:\wamp\www\VAN-Desktop\js\video.js	/^  init:function(){$/;"	method	line:34
+html	H:\wamp\www\VAN-Desktop\music.html	/^<html>$/;"	function	line:2
+head	H:\wamp\www\VAN-Desktop\music.html	/^	<head>$/;"	function	line:3
+meta	H:\wamp\www\VAN-Desktop\music.html	/^		<meta charset="UTF-8">$/;"	function	line:4
+title	H:\wamp\www\VAN-Desktop\music.html	/^		<title>VAN-Music<\/title>$/;"	function	line:5
+link	H:\wamp\www\VAN-Desktop\music.html	/^		<link rel="stylesheet" href="css\/music.css" \/>$/;"	function	line:6
+body	H:\wamp\www\VAN-Desktop\music.html	/^	<body>$/;"	function	line:8
+audio	H:\wamp\www\VAN-Desktop\music.html	/^		<audio src="" id="audio"><\/audio>$/;"	function	line:9
+div	H:\wamp\www\VAN-Desktop\music.html	/^		<div id="music_top">$/;"	function	line:10
+p	H:\wamp\www\VAN-Desktop\music.html	/^			<p class="music_title">Van·Music<\/p>$/;"	function	line:11
+div	H:\wamp\www\VAN-Desktop\music.html	/^			<div id="music_search_box">$/;"	function	line:12
+input	H:\wamp\www\VAN-Desktop\music.html	/^				<input type="text" id="music_search" placeholder="版权限制，暂停使用在线功能" \/>$/;"	function	line:13
+span	H:\wamp\www\VAN-Desktop\music.html	/^				<span id="music_search_btn"><i><\/i><\/span>$/;"	function	line:14
+div	H:\wamp\www\VAN-Desktop\music.html	/^				<div id="music_search_content">$/;"	function	line:15
+p	H:\wamp\www\VAN-Desktop\music.html	/^					<p id="music_search_prompt">$/;"	function	line:16
+span	H:\wamp\www\VAN-Desktop\music.html	/^						<span id="close_search"><\/span>$/;"	function	line:18
+ul	H:\wamp\www\VAN-Desktop\music.html	/^					<ul id="music_search_list">$/;"	function	line:20
+div	H:\wamp\www\VAN-Desktop\music.html	/^		<div id="music_album">$/;"	function	line:26
+div	H:\wamp\www\VAN-Desktop\music.html	/^			<div class="music_album_box">$/;"	function	line:28
+div	H:\wamp\www\VAN-Desktop\music.html	/^				<div id="music_disc_box">$/;"	function	line:29
+img	H:\wamp\www\VAN-Desktop\music.html	/^					<img id="music_album_img"\/>$/;"	function	line:30
+img	H:\wamp\www\VAN-Desktop\music.html	/^					<img src="image\/play_disc.png" id="music_disc_img"\/>$/;"	function	line:31
+div	H:\wamp\www\VAN-Desktop\music.html	/^				<div id="music_info_box">$/;"	function	line:33
+p	H:\wamp\www\VAN-Desktop\music.html	/^					<p>歌曲名字:<span><\/span><\/p>$/;"	function	line:34
+p	H:\wamp\www\VAN-Desktop\music.html	/^					<p>歌手名字:<span><\/span><\/p>$/;"	function	line:35
+p	H:\wamp\www\VAN-Desktop\music.html	/^					<p>专辑名字:<span><\/span><\/p>$/;"	function	line:36
+div	H:\wamp\www\VAN-Desktop\music.html	/^		<div id="music_lyric">$/;"	function	line:40
+div	H:\wamp\www\VAN-Desktop\music.html	/^			<div id="music_lyric_box">$/;"	function	line:41
+div	H:\wamp\www\VAN-Desktop\music.html	/^				<div id="music_lyric_line"><\/div>$/;"	function	line:42
+ul	H:\wamp\www\VAN-Desktop\music.html	/^				<ul id="music_lyric_content">$/;"	function	line:43
+canvas	H:\wamp\www\VAN-Desktop\music.html	/^		<canvas id="spectrum" width="800px" height="600px"><\/canvas>$/;"	function	line:48
+div	H:\wamp\www\VAN-Desktop\music.html	/^		<div id="music_buttom" class="list_open">$/;"	function	line:49
+div	H:\wamp\www\VAN-Desktop\music.html	/^			<div id="music_console">$/;"	function	line:50
+div	H:\wamp\www\VAN-Desktop\music.html	/^				<div id="music_playback_control">$/;"	function	line:51
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span id="music_prev"><\/span>$/;"	function	line:52
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span id="music_play"><\/span>$/;"	function	line:53
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span id="music_next"><\/span>$/;"	function	line:54
+div	H:\wamp\www\VAN-Desktop\music.html	/^				<div id="music_playback_progress">$/;"	function	line:56
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span class="play_time" id="now_time">00:00<\/span>$/;"	function	line:57
+div	H:\wamp\www\VAN-Desktop\music.html	/^					<div id="play_progress_bar">$/;"	function	line:58
+span	H:\wamp\www\VAN-Desktop\music.html	/^						<span id="play_now_progress" class="progress"><\/span>$/;"	function	line:59
+span	H:\wamp\www\VAN-Desktop\music.html	/^						<span id="play_progress_point" class="progress_point"><\/span>$/;"	function	line:60
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span class="play_time" id="all_time">00:00<\/span>$/;"	function	line:62
+div	H:\wamp\www\VAN-Desktop\music.html	/^				<div id="music_playback_other">$/;"	function	line:64
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span id="music_loop" class="order"><\/span>$/;"	function	line:65
+div	H:\wamp\www\VAN-Desktop\music.html	/^					<div id="music_volume">$/;"	function	line:66
+span	H:\wamp\www\VAN-Desktop\music.html	/^						<span id="music_volume_btn" class="center"><\/span>$/;"	function	line:67
+div	H:\wamp\www\VAN-Desktop\music.html	/^						<div id="music_volume_bar" class="center">$/;"	function	line:68
+span	H:\wamp\www\VAN-Desktop\music.html	/^							<span id="volume_now_progress" class="progress"><\/span>$/;"	function	line:69
+span	H:\wamp\www\VAN-Desktop\music.html	/^							<span id="volume_progress_point" class="progress_point"><\/span>$/;"	function	line:70
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span id="music_list_btn" class="center"><\/span>$/;"	function	line:73
+div	H:\wamp\www\VAN-Desktop\music.html	/^			<div id="music_list_box">$/;"	function	line:76
+p	H:\wamp\www\VAN-Desktop\music.html	/^				<p class="music_list_title">$/;"	function	line:77
+span	H:\wamp\www\VAN-Desktop\music.html	/^					<span class="music_list_name">播放列表<em>(10)<\/em><\/span>$/;"	function	line:78
+ul	H:\wamp\www\VAN-Desktop\music.html	/^				<ul id="music_list">$/;"	function	line:80
+div	H:\wamp\www\VAN-Desktop\music.html	/^		<div id="bg"><\/div>$/;"	function	line:85
+img	H:\wamp\www\VAN-Desktop\music.html	/^		<img src="image\/music_bg.jpg" class="bg_img"\/>$/;"	function	line:86
+script	H:\wamp\www\VAN-Desktop\music.html	/^		<script type="text\/javascript" src="js\/method.js" ><\/script>$/;"	function	line:87
+script	H:\wamp\www\VAN-Desktop\music.html	/^		<script type="text\/javascript" src="js\/data.js" ><\/script>$/;"	function	line:88
+script	H:\wamp\www\VAN-Desktop\music.html	/^		<script type="text\/javascript" src="js\/music.js" ><\/script>$/;"	function	line:89
+VAN-Desktop	H:\wamp\www\VAN-Desktop\README.md	/^# VAN-Desktop$/;"	function	line:1
+html	H:\wamp\www\VAN-Desktop\video.html	/^<html lang="en">$/;"	function	line:2
+head	H:\wamp\www\VAN-Desktop\video.html	/^<head>$/;"	function	line:3
+meta	H:\wamp\www\VAN-Desktop\video.html	/^  <meta charset="UTF-8">$/;"	function	line:4
+title	H:\wamp\www\VAN-Desktop\video.html	/^  <title>Document<\/title>$/;"	function	line:5
+link	H:\wamp\www\VAN-Desktop\video.html	/^  <link rel="stylesheet" href="css\/video.css">$/;"	function	line:6
+body	H:\wamp\www\VAN-Desktop\video.html	/^<body>$/;"	function	line:8
+div	H:\wamp\www\VAN-Desktop\video.html	/^  <div id="video_player">$/;"	function	line:9
+div	H:\wamp\www\VAN-Desktop\video.html	/^    <div id="video_box" class="false">$/;"	function	line:10
+video	H:\wamp\www\VAN-Desktop\video.html	/^      <video width="100%" height="100%" id="video" src="">$/;"	function	line:11
+div	H:\wamp\www\VAN-Desktop\video.html	/^      <div id="video_control">$/;"	function	line:14
+div	H:\wamp\www\VAN-Desktop\video.html	/^        <div class="progress_bar">$/;"	function	line:15
+div	H:\wamp\www\VAN-Desktop\video.html	/^          <div class="progress_bar_schedile">$/;"	function	line:16
+span	H:\wamp\www\VAN-Desktop\video.html	/^            <span class="progress_point"><\/span>$/;"	function	line:17
+div	H:\wamp\www\VAN-Desktop\video.html	/^          <div class="prompt_time">00:00<\/div>$/;"	function	line:19
+span	H:\wamp\www\VAN-Desktop\video.html	/^        <span class="play_time">00:00\/00:00<\/span>$/;"	function	line:21
+div	H:\wamp\www\VAN-Desktop\video.html	/^        <div class="conyrol_btn">$/;"	function	line:22
+input	H:\wamp\www\VAN-Desktop\video.html	/^          <input type="button" name="stop" class="stop disable" title="停止"\/>$/;"	function	line:23
+input	H:\wamp\www\VAN-Desktop\video.html	/^          <input type="button" name="prev" class="prev disable" title="上一个"\/>$/;"	function	line:24
+input	H:\wamp\www\VAN-Desktop\video.html	/^          <input type="button" name="play" class="play" title="播放"\/>$/;"	function	line:25
+input	H:\wamp\www\VAN-Desktop\video.html	/^          <input type="button" name="next" class="next disable" title="下一个"\/>$/;"	function	line:26
+div	H:\wamp\www\VAN-Desktop\video.html	/^        <div class="video_control_right">$/;"	function	line:28
+input	H:\wamp\www\VAN-Desktop\video.html	/^          <input type="button" name="volume" class="volume_true volume_mute" title="音量"\/>$/;"	function	line:29
+div	H:\wamp\www\VAN-Desktop\video.html	/^          <div class="volume_bar">$/;"	function	line:30
+div	H:\wamp\www\VAN-Desktop\video.html	/^            <div class="volume_bar_schedile">$/;"	function	line:31
+span	H:\wamp\www\VAN-Desktop\video.html	/^              <span class="volume_point"><\/span>$/;"	function	line:32
+input	H:\wamp\www\VAN-Desktop\video.html	/^          <input type="button" name="full_screen" class="full_screen" title="全屏"\/>$/;"	function	line:35
+div	H:\wamp\www\VAN-Desktop\video.html	/^    <div id="video_list">$/;"	function	line:39
+div	H:\wamp\www\VAN-Desktop\video.html	/^      <div class="list_btn"><\/div>$/;"	function	line:40
+div	H:\wamp\www\VAN-Desktop\video.html	/^      <div class="list_title">$/;"	function	line:41
+span	H:\wamp\www\VAN-Desktop\video.html	/^        <span class="local_video active">本地视频<\/span>$/;"	function	line:42
+span	H:\wamp\www\VAN-Desktop\video.html	/^        <span class="play_record">播放记录<\/span>$/;"	function	line:43
+div	H:\wamp\www\VAN-Desktop\video.html	/^      <div class="list_box">$/;"	function	line:45
+ul	H:\wamp\www\VAN-Desktop\video.html	/^        <ul class="local_list">$/;"	function	line:46
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>今天吃什么<\/li>$/;"	function	line:48
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>今天吃什么<\/li>$/;"	function	line:49
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>今天吃什么<\/li>$/;"	function	line:50
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>今天吃什么<\/li> -->$/;"	function	line:51
+ul	H:\wamp\www\VAN-Desktop\video.html	/^        <ul class="record_list">$/;"	function	line:54
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>想吃什么吃什么<\/li>$/;"	function	line:56
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>想吃什么吃什么<\/li>$/;"	function	line:57
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>想吃什么吃什么<\/li>$/;"	function	line:58
+li	H:\wamp\www\VAN-Desktop\video.html	/^          <li>想吃什么吃什么<\/li> -->$/;"	function	line:59
+script	H:\wamp\www\VAN-Desktop\video.html	/^  <script type="text\/javascript" src="js\/method.js" ><\/script>$/;"	function	line:64
+script	H:\wamp\www\VAN-Desktop\video.html	/^  <script type="text\/javascript" src="js\/data.js" ><\/script>$/;"	function	line:65
+script	H:\wamp\www\VAN-Desktop\video.html	/^  <script type="text\/javascript" src="js\/videotr4.js" ><\/script>$/;"	function	line:66
