@@ -27,8 +27,12 @@ function Video(){
   this.videoId = window.location.search ||  data.getFileByClass(data.nodes, 'video')[0].id;
   this.data = data.getFileByClass(data.nodes, 'video');
   this.num = data.indexOf(this.data, data.getFile(this.data, this.videoId));
+  this.progressBarW = progressBar.offsetWidth;
   this.volumeBarW = volumeBar.offsetWidth;
-  this.oldVolume = null;//存下旧的音量
+  this.listW = Math.ceil(videoList.offsetWidth);
+  this.oldVolume = null;//存下旧的音量;
+  this.drafting = true;
+  this.onOff = false;
 };
 
 Video.prototype = {
@@ -59,6 +63,45 @@ Video.prototype = {
         listBtn.onclick = function() {//初始化点击静音
             _this.openList();
         };
+        localVideo.onclick = function(){
+            _this.tabList(true);
+        };
+        playRecord.onclick = function(){
+            _this.tabList(false);
+        };
+        $.drag(progressPoint,function(ev,This) {//初始化进度拖拽
+              This.drafting = false;
+          },function(ev,This){
+              var ev = ev || event;
+          		var W = ev.clientX - $.getOffsetToBody(progressBar, 'offsetLeft');
+          		if(W > This.progressBarW) {
+          			W = This.progressBarW;
+          		}
+          		if(W < 0) {
+          			W = 0;
+          		}
+          		progressPoint.style.left = W * (This.progressBarW - progressPoint.offsetWidth) / This.progressBarW + 'px';
+          		progressBarSchedile.style.width = W + 'px';
+          },function(ev,This){
+            This.toProgress(ev);
+            document.onmousemove = document.onmouseup = null;
+        },this);
+        progressBar.onclick = function(ev) {//初始化进度点击
+          _this.toProgress(ev);
+        };
+        $.drag(volumePoint,function(ev,This){//初始化音量拖拽
+          This.oldVolume = videoE.volume;
+        },function(ev,This){
+          _this.toVolume(ev);
+        },function(ev,This){
+          if(videoE.volume != 0) {
+      			This.oldVolume = null;
+      		}
+      		document.onmousemove = document.onmouseup = null;
+        },this);
+        volumeBar.onclick = function(ev) {//初始化音量点击
+        	_this.toVolume(ev);
+        };
     },
     addList:function(){
         var _this = this;
@@ -84,20 +127,28 @@ Video.prototype = {
         $.addClass(this.videoItems[num], 'video_active');
         videoE.src = 'video/' + obj.title + '.' + obj.type;
         videoE.load();
-        progressBar.style.display = 'none';
-        playTime.style.display = 'none';
-        fullScreen.style.display = 'none';
+        $.removeClass(play, 'pause');
+        $.addClass(play, 'play');
+        videoE.pause();
+        clearInterval(this.timer);
+        play.onOff = false;
+        progressPoint.style.left =  0 + 'px';
+        progressBarSchedile.style.width = 0 +'px';
+        progressBar.style.visibility = 'hidden';
+        playTime.style.visibility = 'hidden';
+        fullScreen.style.visibility = 'hidden';
     },
     playVideo:function(){
         var _this = this;
-        progressBar.style.display = 'block';
-        playTime.style.display = 'block';
-        fullScreen.style.display = 'block';
-        this.progressBarW = progressBar.offsetWidth;
+        progressBar.style.visibility = 'visible';
+        playTime.style.visibility = 'visible';
+        fullScreen.style.visibility = 'visible';
         this.timer = setInterval(function() {
-            progressPoint.style.left = videoE.currentTime / videoE.duration * (_this.progressBarW - progressPoint.offsetWidth) + 'px';
-            progressBarSchedile.style.width = videoE.currentTime / videoE.duration * _this.progressBarW + 'px';
-            playTime.innerHTML = $.getTime(videoE.currentTime) + '/' + $.getTime(videoE.duration);
+            if(_this.drafting){
+                progressPoint.style.left = videoE.currentTime / videoE.duration * (_this.progressBarW - progressPoint.offsetWidth) + 'px';
+                progressBarSchedile.style.width = videoE.currentTime / videoE.duration * _this.progressBarW + 'px';
+                playTime.innerHTML = $.getTime(videoE.currentTime) + '/' + $.getTime(videoE.duration);
+            }
         }, 100);
     },
     prev: function() {
@@ -171,9 +222,57 @@ Video.prototype = {
     	$.move(videoList, {
     		right: listBtn.H
     	}, 500, 'easeIn');
+        if (listBtn.H) {
+            videoBox.style.width='100%';
+            $.removeClass(listBtn, 'open');
+            $.addClass(listBtn, 'close');;
+        } else {
+            videoBox.style.width='84%';
+            $.removeClass(listBtn, 'close');
+            $.addClass(listBtn, 'open');;
+        }
         this.progressBarW = progressBar.offsetWidth;
-        listBtn.H?videoBox.style.width='100%':videoBox.style.width='84%'
+        progressPoint.style.left = videoE.currentTime / videoE.duration * (this.progressBarW - progressPoint.offsetWidth) + 'px';
+        progressBarSchedile.style.width = videoE.currentTime / videoE.duration * this.progressBarW + 'px';
     },
+    tabList:function(bl){
+        console.log(this.listW);
+        $.move(localList, {
+    		left: bl?0:-this.listW
+    	}, 500, 'easeOut');
+        $.move(recordList, {
+    		left: bl?this.listW:0
+    	}, 500, 'easeOut');
+    },
+    toProgress:function(ev){
+        var ev = ev || event;
+        var W = ev.clientX - $.getOffsetToBody(progressBar, 'offsetLeft');
+        if(W > this.progressBarW) {
+          W = this.progressBarW;
+        }
+        if(W < 0) {
+          W = 0;
+        }
+        progressPoint.style.left = W * (this.progressBarW - progressPoint.offsetWidth) / this.progressBarW + 'px';
+        progressBarSchedile.style.width = W + 'px';
+        videoE.currentTime = W / this.progressBarW * videoE.duration;
+        playTime.innerHTML = $.getTime(videoE.currentTime) + '/' + $.getTime(videoE.duration);
+        this.drafting = true;
+    },
+    toVolume:function(ev){
+      var ev = ev || event;
+      var W = ev.clientX - $.getOffsetToBody(volumeBar, 'offsetLeft');
+      if(W > this.volumeBarW) {
+        W = this.volumeBarW;
+      };
+      if(W < 0){
+        W = 0;
+      };
+      volumePoint.style.left = W * (this.volumeBarW - volumePoint.offsetWidth) / this.volumeBarW + 'px';
+      volumeBarSchedile.style.width = W + 'px';
+      videoE.volume = W / this.volumeBarW;
+      this.judgeVolume();
+    }
 };
 
 var video = new Video();

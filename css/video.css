@@ -240,15 +240,10 @@ li{
   top: 5px;
   border: none;
 }
-#video_box.true .progress_bar,
-#video_box.true .play_time,
-#video_box.true .full_screen{
-  display: block;
-}
 #video_box.false .progress_bar,
 #video_box.false .play_time,
 #video_box.false .full_screen{
-  display: none;
+  visibility: hidden;
 }
 #video_list{
   width: 16%;
@@ -262,6 +257,8 @@ li{
 #video_list .list_btn{
   width: 20px;
   height: 100px;
+  line-height: 106px;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: -22px;
@@ -270,15 +267,24 @@ li{
   border: 1px solid rgb(44,45,46);
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  background-image: url(../image/list_left.png);
-  background-repeat: no-repeat;
-  background-position: 4px 40px;
+  cursor: pointer;
+}
+#video_list .list_btn span{
+    display: inline-block;
+    width: 12px;
+    height: 19px;
+    background-image: url(../image/list_left.png);
+    background-repeat: no-repeat;
+    transition: all 0.2s;
 }
 #video_list .list_btn:hover{
   background: rgb(39,40,41);
-  background-image: url(../image/list_left.png);
-  background-repeat: no-repeat;
-  background-position: 4px 40px;
+}
+#video_list .open span{
+    transform: rotateZ(0deg);
+}
+#video_list .close span{
+    transform: rotateZ(180deg);
 }
 #video_list .list_title{
   width: 100%;
@@ -294,6 +300,7 @@ li{
   font-size: 13px;
   text-align: center;
   border-bottom: 1px solid rgb(62,64,66);
+  cursor: pointer;
 }
 #video_list .list_title span.active{
   border-bottom: 1px solid rgb(49,157,237);
@@ -328,7 +335,8 @@ li{
   color: rgb(116, 116, 116);
   line-height: 25px;
   overflow: hidden;
-  text-overflow: ellipsis;;
+  text-overflow: ellipsis;
+  cursor: pointer;
 }
 #video_list .list_box ul li:hover{
     background-color: rgb(45, 45, 46);
