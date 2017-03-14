@@ -148,6 +148,14 @@ li{
   position: relative;
   top: -7px;
 }
+/*兼容火狐下对某些样式渲染效果的差别*/
+@-moz-document url-prefix() {
+    #video_control .conyrol_btn .stop,
+    #video_control .conyrol_btn .prev,
+    #video_control .conyrol_btn .next {
+        top:0;
+    }
+}
 #video_control .conyrol_btn .next:hover{
   background: url(../image/play_btn_next_hover.png) no-repeat;
   background-size: 100% 100%;

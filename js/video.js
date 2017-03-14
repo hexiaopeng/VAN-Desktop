@@ -14,7 +14,7 @@ var videoBox = document.getElementById('video_box'),
     volumeBar = videoControl.getElementsByClassName('volume_bar')[0],
     volumeBarSchedile = videoControl.getElementsByClassName('volume_bar_schedile')[0],
     volumePoint = videoControl.getElementsByClassName('volume_point')[0],
-    fullScreen = videoControl.getElementsByClassName('full_screen')[0],
+    fullScreenE = videoControl.getElementsByClassName('full_screen')[0],
     videoList = document.getElementById('video_list'),
     listBtn = videoList.getElementsByClassName('list_btn')[0],
     localVideo = videoList.getElementsByClassName('local_video')[0],
@@ -32,7 +32,7 @@ function Video(){
   this.listW = Math.ceil(videoList.offsetWidth);
   this.oldVolume = null;//存下旧的音量;
   this.drafting = true;
-  this.onOff = false;
+  this.palyOnOff = false;
 };
 
 Video.prototype = {
@@ -132,17 +132,18 @@ Video.prototype = {
         videoE.pause();
         clearInterval(this.timer);
         play.onOff = false;
+        this.palyOnOff = false;
         progressPoint.style.left =  0 + 'px';
         progressBarSchedile.style.width = 0 +'px';
         progressBar.style.visibility = 'hidden';
         playTime.style.visibility = 'hidden';
-        fullScreen.style.visibility = 'hidden';
+        fullScreenE.style.visibility = 'hidden';
     },
     playVideo:function(){
         var _this = this;
         progressBar.style.visibility = 'visible';
         playTime.style.visibility = 'visible';
-        fullScreen.style.visibility = 'visible';
+        fullScreenE.style.visibility = 'visible';
         this.timer = setInterval(function() {
             if(_this.drafting){
                 progressPoint.style.left = videoE.currentTime / videoE.duration * (_this.progressBarW - progressPoint.offsetWidth) + 'px';
@@ -168,9 +169,11 @@ Video.prototype = {
             $.removeClass(play, 'play');
             $.addClass(play, 'pause');
             videoE.play();
+            // videoE.playbackRate  = 2.0
             this.playVideo();
         }
         play.onOff = !play.onOff;
+        this.palyOnOff = !this.palyOnOff;
     },
     next: function() {
         this.num++;
@@ -225,11 +228,11 @@ Video.prototype = {
         if (listBtn.H) {
             videoBox.style.width='100%';
             $.removeClass(listBtn, 'open');
-            $.addClass(listBtn, 'close');;
+            $.addClass(listBtn, 'close');
         } else {
             videoBox.style.width='84%';
             $.removeClass(listBtn, 'close');
-            $.addClass(listBtn, 'open');;
+            $.addClass(listBtn, 'open');
         }
         this.progressBarW = progressBar.offsetWidth;
         progressPoint.style.left = videoE.currentTime / videoE.duration * (this.progressBarW - progressPoint.offsetWidth) + 'px';
