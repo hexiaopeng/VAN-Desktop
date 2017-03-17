@@ -160,6 +160,15 @@ function DataTree() {
 					class: 'folder',
 					id: 4,
 					pid: 0,
+					child:[
+						{
+							title:'《爸爸一家亲》作者：碧色微橘(晋江银牌推荐VIP2016-01-31完结)',
+							class:'book',
+							type:'txt',
+							id:'24',
+							pid:'4'
+						}
+					]
 				}
 			]
 		},
