@@ -350,5 +350,5 @@ li{
     background-color: rgb(45, 45, 46);
 }
 #video_list .list_box ul li.video_active{
-    background-color: rgb(49, 163, 252);
+    color: rgb(49, 163, 252);
 }

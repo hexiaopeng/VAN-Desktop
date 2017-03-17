@@ -33,6 +33,7 @@ function Video(){
   this.oldVolume = null;//存下旧的音量;
   this.drafting = true;
   this.palyOnOff = false;
+  this.record = [];
 };
 
 Video.prototype = {
@@ -64,9 +65,13 @@ Video.prototype = {
             _this.openList();
         };
         localVideo.onclick = function(){
+            $.removeClass(playRecord,'active');
+            $.addClass(this,'active');
             _this.tabList(true);
         };
         playRecord.onclick = function(){
+            $.removeClass(localVideo,'active');
+            $.addClass(this,'active');
             _this.tabList(false);
         };
         $.drag(progressPoint,function(ev,This) {//初始化进度拖拽
@@ -119,6 +124,21 @@ Video.prototype = {
             };
         }
     },
+    recordList:function(num){
+        var _this = this;
+        if(data.indexOf(this.record,num) == -1){
+            var obj = this.data[num];
+            var recordItem = document.createElement('li');
+            recordItem.innerHTML = obj.title;
+            recordList.appendChild(recordItem);
+            recordItem.index = num;
+            recordItem.onclick = function () {
+                _this.num = this.index;
+                _this.loadVideo(this.index);
+            };
+            this.record.push(num);
+        }
+    },
     loadVideo:function(num){
         var obj = this.data[num];
         for(var i=0; i< this.videoItems.length; i++){
@@ -127,6 +147,7 @@ Video.prototype = {
         $.addClass(this.videoItems[num], 'video_active');
         videoE.src = 'video/' + obj.title + '.' + obj.type;
         videoE.load();
+        this.recordList(num);
         $.removeClass(play, 'pause');
         $.addClass(play, 'play');
         videoE.pause();
@@ -239,7 +260,6 @@ Video.prototype = {
         progressBarSchedile.style.width = videoE.currentTime / videoE.duration * this.progressBarW + 'px';
     },
     tabList:function(bl){
-        console.log(this.listW);
         $.move(localList, {
     		left: bl?0:-this.listW
     	}, 500, 'easeOut');
