@@ -88,6 +88,161 @@ Method.prototype = {
 		return lrcArr;
 	},
 	/**
+	 * [isDOM description]  定义的查看对象是否为DOM对象的方法
+	 * @param  {[type]}  obj [description]  传入要查看的对象
+	 * @return {Boolean}     [description]  返回布尔值
+	 */
+	isDOM:function(obj){
+		return ( typeof HTMLElement === 'object' )? obj instanceof HTMLElement:obj && typeof obj === 'object' && obj.nodeType === 1 && typeof obj.nodeName === 'string';
+	},
+	/**
+	 * [getEle description]  定义的获取DOM元素的方法
+	 * @param  {[type]} str [description] 传入获取元素的选择器字符串，支				持ID,CLASS,TAGNAME
+	 * @return {[type]}     [description]
+	 */
+	getEle:function(str) {
+        var parent;
+        if (!$.isDOM(this)) {
+            parent = document;
+        }else {
+            parent = this;
+        }
+        var resule = [];
+        var reg = new RegExp('\\S+');
+        if (reg.test(str)) {
+            var i = str.search(reg);
+            var w = str.match(reg)[0];
+        }else {
+            return;
+        }
+        var str1 = str.substring(i+w.length);
+        var aEle = parent.getElementsByTagName('*');
+        if (w.charAt(0) == '#') {
+            var a = document.getElementById(w.substring(1));
+            if (reg.test(str1)) {
+                var nextResule = $.getEle.call(a,str1);
+                if (nextResule.length != 0) {
+                    for (var j = 0; j < nextResule.length; j++) {
+                        resule.push(nextResule[j]);
+                    }
+                }
+            } else {
+                resule.push(a);
+            }
+        }else if (w.charAt(0) == '.') {
+            var sclass = w.substring(1);
+            var Reg = new RegExp('\\b' + sclass + '\\b')
+            for (var i = 0; i < aEle.length; i++) {
+                if (Reg.test(aEle[i].className)) {
+                    if (reg.test(str1)) {
+                        var nextResule = $.getEle.call(aEle[i],str1);
+                        if (nextResule.length != 0) {
+                            for (var j = 0; j < nextResule.length; j++) {
+                                resule.push(nextResule[j]);
+                            }
+                        }
+                    } else {
+                        resule.push(aEle[i]);
+                    }
+                }
+            }
+        }else {
+            var tag = parent.getElementsByTagName(w);
+            for (var i = 0; i < tag.length; i++) {
+                if (reg.test(str1)) {
+                    var nextResule = $.getEle.call(tag[i],str1);
+                    if (nextResule.length != 0) {
+                        for (var j = 0; j < nextResule.length; j++) {
+                            resule.push(nextResule[j]);
+                        }
+                    }
+                } else {
+                    resule.push(tag[i]);
+                }
+            }
+        }
+        return resule;
+    },
+	/**
+	 * [JsonP description]  定义的JSONP跨域方法
+	 * @param {[type]} obj [description]  传入参数对象
+	 */
+	JsonP:function(obj){
+		var opt = {
+			url: obj.url || '',
+			data:obj.data || {},
+			success:obj.success || function(){},
+			callback:obj.callback || 'callback',
+			error:obj.error || function(){},
+			timeout: obj.timeout || 0
+		}
+		var arr = [];
+		var callbackName = 'callback' + new Date().getTime();
+		opt.data[opt.callback] = callbackName;
+		var urlArr = opt.url.split("?")
+		var paraArr = urlArr[1] ? urlArr[1].split('&') : [];
+		for (var i = 0; i < paraArr.length; i++) {
+			opt.data[paraArr[i].split('=')[0]] = paraArr[i].split('=')[1];
+		};
+		for(var attr in opt.data){
+			arr.push(attr +'='+ encodeURI(opt.data[attr]));
+		}
+		opt.data = arr.join('&');
+		window[callbackName] = function(data){
+			opt.success(data);
+			Script.loaded = true;
+		}
+		var Script = document.createElement('script');
+		Script.src = urlArr[0] + '?' + opt.data;
+		Script.loaded = false;
+		document.getElementsByTagName('head')[0].appendChild(Script);
+		document.getElementsByTagName('head')[0].removeChild(Script);
+		var supportLoad = "onload" in Script;
+		var onEvent = supportLoad ? "onload" : "onreadystatechange";
+		Script[onEvent] = function() {
+			if(Script.readyState && Script.readyState !="loaded"){
+	            return;
+	        }
+	        if(Script.readyState == 'loaded' && Script.loaded == false){
+	            Script.onerror();
+	            return;
+	        }
+	        Script = Script[onEvent] = Script.onerror = window[callbackName] = null;
+		};
+		Script.onerror = function(){
+	        if(window[callbackName] == null){
+	            console.log("请求超时，请重试！");
+	        }
+	        opt.error();//如果有专门的error方法的话，就调用。
+	        Script = Script[onEvent] = Script.onerror = window[callbackName] = null;
+	    }
+
+		if(opt.timeout!= 0){
+	        setTimeout(function() {
+	            if(Script && Script.loaded == false){
+	                window[callbackName] = null;//超时，且未加载结束，注销函数
+	                Script.onerror();
+	            }
+	        }, opt.timeout);
+	    }
+	},
+	parseTxt:function(str){
+		var resule = [];
+		var arr = str.match(/[^\u2606]+/g);
+		for (var i = 0; i < arr.length; i++) {
+			var  secArr = arr[i].match(/[^\n]+/g);
+			var secObj = {
+				title:secArr[0],
+				content:[]
+			};
+			for (var j = 1; j < secArr.length; j++) {
+				secObj.content.push(secArr[j]);
+			};
+			resule.push(secObj);
+		};
+		return resule;
+	},
+	/**
 	 * [arrIndexOf description]  定义的查找数组指定值位置的方法
 	 * @param  {[type]} arr [description]  传入需要查找的数组
 	 * @param  {[type]} v   [description]  传入需要查找的值
