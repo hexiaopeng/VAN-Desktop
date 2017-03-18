@@ -161,8 +161,18 @@ Method.prototype = {
                 }
             }
         }
-        return resule;
+        if (resule.length == 0) {
+        	return null;
+        } else if(resule.length == 1){
+        	return resule[0];
+        }else{
+			return resule;
+		}
     },
+	getUrl:function(str,para){
+		var reg = new RegExp(para + '=[^&]?');
+		return str.match(reg)?str.match(reg)[0].split('=')[1]:null;
+	},
 	/**
 	 * [JsonP description]  定义的JSONP跨域方法
 	 * @param {[type]} obj [description]  传入参数对象

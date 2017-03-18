@@ -166,7 +166,12 @@ function DataTree() {
 							class:'book',
 							type:'txt',
 							id:'24',
-							pid:'4'
+							pid:'4',
+							name:'爸爸一家亲',
+							author:'碧色微橘',
+							updateTime:'2016-1-31',
+							typeName:'现代都市',
+							newChapter:'完结'
 						}
 					]
 				}
