@@ -186,6 +186,7 @@ function DataTree() {
 	]
 };
 DataTree.prototype = {
+	constructor:DataTree,
 	/**
 	 * [getFile description]  定义的获取数据中指定数据的方法
 	 * @param  {[type]} arr [description]  传入需要查找的数组

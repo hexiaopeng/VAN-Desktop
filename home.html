@@ -18,65 +18,26 @@
             </div>
             <div class="nav_list">
                 <ul>
-                    <li class="bg">
+                    <li class="bg lately">
                         <a href="javascript:;">
                             <i class="read"></i>最近阅读
                             <span class="ink"></span>
                         </a>
                     </li>
-                    <li>
+                    <li class="local">
                         <a href="javascript:;">
                             <i class="star"></i>我的书架
                               <span class="ink"></span>
                         </a>
                     </li>
-                    <li>
+                    <li class="online">
                         <a href="javascript:;">
                             <i class="type"></i>在线书库
                             <i class="more">+</i>
                             <span class="ink"></span>
                         </a>
                         <ul class="search_list">
-                            <li>
-                                <a data-type="1" href="javascript:;">玄 幻 魔 法
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-type="2" href="javascript:;">武 侠 修 真
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-type="3" href="javascript:;">现 代 都 市
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-type="4" href="javascript:;">言 情 小 说
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-type="5" href="javascript:;">历 史 军 事
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-type="6" href="javascript:;">游 戏 竞 技
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-type="7" href="javascript:;">科 幻 灵 异
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-type="8" href="javascript:;">耽 美 小 说
-                                    <span class="ink"></span>
-                                </a>
-                            </li>
+
                         </ul>
                     </li>
                 </ul>
@@ -90,63 +51,48 @@
             </div>
         </div>
         <div class="BookList">
-            <ul>
+        </div>
+    <script type="text/html" id="listTemp">
+        <ul>
+            <%for(i=0; i<data.length; i++) {%>
                 <li>
                     <div class="BookBox"></div>
                     <div class="BookList_text">
                         <a href="javascript:;">
-                            <span class="BookList_name">大主宰</span>
+                            <span class="BookList_name"><%=data[i].name%></span>
                         </a>
-                        <p class="BookList_time">作者：<b>天蚕土豆</b></p>
-                        <p class="BookList_section">最近更新：正文 第一千四百三十二章 夫妻相见</p>
-                        <p class="BookList_time">15-07-25 12:30更新</p>
-                        <span class="BookList_intro">类型：玄幻魔法</span>
+                        <p class="BookList_time">作者：<b><%=data[i].author%></b></p>
+                        <p class="BookList_section">最近更新：<%=data[i].newChapter%></p>
+                        <p class="BookList_time"><%=data[i].updateTime%></p>
+                        <span class="BookList_intro">类型：<%=data[i].typeName%></span>
                     </div>
                 </li>
-                <li>
-                    <div class="BookBox"></div>
-                    <div class="BookList_text">
-                        <a href="javascript:;">
-                            <span class="BookList_name">大主宰</span>
-                        </a>
-                        <p class="BookList_time">作者：<b>天蚕土豆</b></p>
-                        <p class="BookList_section">最近更新：正文 第一千四百三十二章 夫妻相见</p>
-                        <p class="BookList_time">15-07-25 12:30更新</p>
-                        <span class="BookList_intro">类型：玄幻魔法</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="BookBox"></div>
-                    <div class="BookList_text">
-                        <a href="javascript:;">
-                            <span class="BookList_name">大主宰</span>
-                        </a>
-                        <p class="BookList_time">作者：<b>天蚕土豆</b></p>
-                        <p class="BookList_section">最近更新：正文 第一千四百三十二章 夫妻相见</p>
-                        <p class="BookList_time">15-07-25 12:30更新</p>
-                        <span class="BookList_intro">类型：玄幻魔法</span>
-                    </div>
-                </li>
-            </ul>
-            <div class="container large">
-                <div class="pagination">
-                    <ul>
-                        <li><a href="javascript:;"></a></li>
-                        <li><a href="javascript:;">1</a></li>
-                        <li class="active"><a href="javascript:;">2</a></li>
-                        <li><a href="javascript:;"></a></li>
-                    </ul>
-                </div>
+            <%}%>
+        </ul>
+        <div class="container large">
+            <div class="pagination">
+                <ul>
+                </ul>
             </div>
+        </div>
+    </script>
+    <script type="text/html" id="chapterTemp">
+        <div class="toptitle">
+            <h1 class="catalog"><%=name%></h1>
+            <h3><%=author%> 著</h3>
+            <h3>最近更新：<%=updateTime%><em></em>类型：<%=typeName%></h3>
         </div>
         <div class="catalogList">
             <ul>
-                <li>
-                    <a href="javascript:;">第一章 古界</a>
-                </li>
+                <%for (i=0; i<data.length; i++) {%>
+                    <li>
+                        <a href="javascript:;"><%=data[i].name%></a>
+                    </li>
+                <%}%>
             </ul>
         </div>
-    </div>
+    </script>
+    <script type="text/javascript" src="js/template.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/method.js"></script>
     <script type="text/javascript" src="js/home.js"></script>

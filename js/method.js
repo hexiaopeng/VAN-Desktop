@@ -169,8 +169,14 @@ Method.prototype = {
 			return resule;
 		}
     },
+	/**
+	 * [getUrl description]  定义的解析url参数的方法
+	 * @param  {[type]} str  [description]  传入要解析的url字符串
+	 * @param  {[type]} para [description]  传入要解析的参数字符串
+	 * @return {[type]}      [description]  返回解析到的参数值，如果没有返回空
+	 */
 	getUrl:function(str,para){
-		var reg = new RegExp(para + '=[^&]?');
+		var reg = new RegExp(para + '=[^&]*');
 		return str.match(reg)?str.match(reg)[0].split('=')[1]:null;
 	},
 	/**
@@ -242,7 +248,7 @@ Method.prototype = {
 		for (var i = 0; i < arr.length; i++) {
 			var  secArr = arr[i].match(/[^\n]+/g);
 			var secObj = {
-				title:secArr[0],
+				name:secArr[0],
 				content:[]
 			};
 			for (var j = 1; j < secArr.length; j++) {
