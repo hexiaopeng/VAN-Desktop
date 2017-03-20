@@ -248,6 +248,7 @@ Method.prototype = {
 		for (var i = 0; i < arr.length; i++) {
 			var  secArr = arr[i].match(/[^\n]+/g);
 			var secObj = {
+				cid : i,
 				name:secArr[0],
 				content:[]
 			};

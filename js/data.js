@@ -172,6 +172,54 @@ function DataTree() {
 							updateTime:'2016-1-31',
 							typeName:'现代都市',
 							newChapter:'完结'
+						},
+						{
+							title:'《爸爸一家亲》作者：碧色微橘(晋江银牌推荐VIP2016-01-31完结)',
+							class:'book',
+							type:'txt',
+							id:'24',
+							pid:'4',
+							name:'爸爸一家亲',
+							author:'碧色微橘',
+							updateTime:'2016-1-31',
+							typeName:'现代都市',
+							newChapter:'完结'
+						},
+						{
+							title:'《爸爸一家亲》作者：碧色微橘(晋江银牌推荐VIP2016-01-31完结)',
+							class:'book',
+							type:'txt',
+							id:'24',
+							pid:'4',
+							name:'爸爸一家亲',
+							author:'碧色微橘',
+							updateTime:'2016-1-31',
+							typeName:'现代都市',
+							newChapter:'完结'
+						},
+						{
+							title:'《爸爸一家亲》作者：碧色微橘(晋江银牌推荐VIP2016-01-31完结)',
+							class:'book',
+							type:'txt',
+							id:'24',
+							pid:'4',
+							name:'爸爸一家亲',
+							author:'碧色微橘',
+							updateTime:'2016-1-31',
+							typeName:'现代都市',
+							newChapter:'完结'
+						},
+						{
+							title:'《爸爸一家亲》作者：碧色微橘(晋江银牌推荐VIP2016-01-31完结)',
+							class:'book',
+							type:'txt',
+							id:'24',
+							pid:'4',
+							name:'爸爸一家亲',
+							author:'碧色微橘',
+							updateTime:'2016-1-31',
+							typeName:'现代都市',
+							newChapter:'完结'
 						}
 					]
 				}

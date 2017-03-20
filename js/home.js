@@ -1,6 +1,7 @@
 function BookHome(){
     this.hash = window.location.hash.substring(1);
-    this.source = $.getUrl(this.hash,'t') || 'local';
+    location.hash = $.getUrl(this.hash,'t') || 't=local'
+    this.source = $.getUrl(this.hash,'t');
     this.isOpen = false;
 }
 
@@ -62,6 +63,7 @@ BookHome.prototype = {
                 data:data.getFileByClass(data.nodes, 'book').slice((page-1)*20,page*20)
             };
             $.getEle('.BookList').innerHTML = template('listTemp',this.data);
+            _this.inChapter();
         } else if(this.con == 'chapter'){
             num = Number($.getUrl(this.hash,'catalog')) || 24;
             var obj = data.getFile(data.nodes,num)
@@ -70,6 +72,7 @@ BookHome.prototype = {
                 success:function(data){
                     $.getEle('#BookLoad').style.display = 'none';
                     _this.data = {
+                        id:obj.id,
                         name:obj.name,
                         author:obj.author,
                         updateTime:obj.updateTime,
@@ -77,6 +80,7 @@ BookHome.prototype = {
                         data:$.parseTxt(data)
                     };
                     $.getEle('.BookList').innerHTML = template('chapterTemp',_this.data);
+                    _this.inContent();
                 }
             })
         }
@@ -99,6 +103,7 @@ BookHome.prototype = {
                         data:JSON.parse(data).showapi_res_body.pagebean.contentlist
                     }
                     $.getEle('.BookList').innerHTML = template('listTemp',_this.data);
+                    _this.inChapter();
                 }
             })
         } else if(this.con == 'chapter'){
@@ -113,6 +118,7 @@ BookHome.prototype = {
                         $.getEle('.BookList').innerHTML = '没有找到您要的小说';
                     } else {
                         _this.data = {
+                            id:obj.showapi_res_body.book.id,
                             name:obj.showapi_res_body.book.name,
                             author:obj.showapi_res_body.book.author,
                             updateTime:obj.showapi_res_body.book.updateTime,
@@ -120,6 +126,7 @@ BookHome.prototype = {
                             data:obj.showapi_res_body.book.chapterList
                         }
                         $.getEle('.BookList').innerHTML = template('chapterTemp',_this.data);
+                        _this.inContent();
                     }
                 }
             })
@@ -128,7 +135,6 @@ BookHome.prototype = {
     online:function(){
         var _this = this;
         this.con = $.getUrl(this.hash,'c') || 'list';
-        console.log(this.hash);
         var typeId = null;
         var num = null;
         if (this.con == 'list') {
@@ -143,6 +149,7 @@ BookHome.prototype = {
                         data:JSON.parse(data).showapi_res_body.pagebean.contentlist
                     }
                     $.getEle('.BookList').innerHTML = template('listTemp',_this.data);
+                    _this.inChapter();
                 }
             })
         } else if(this.con == 'chapter'){
@@ -156,7 +163,9 @@ BookHome.prototype = {
                     if (obj.showapi_res_body.ret_code != 0) {
                         $.getEle('.BookList').innerHTML = '没有找到您要的小说';
                     } else {
+                        console.log(obj);
                         _this.data = {
+                            id:obj.showapi_res_body.book.id,
                             name:obj.showapi_res_body.book.name,
                             author:obj.showapi_res_body.book.author,
                             updateTime:obj.showapi_res_body.book.updateTime,
@@ -164,6 +173,7 @@ BookHome.prototype = {
                             data:obj.showapi_res_body.book.chapterList
                         }
                         $.getEle('.BookList').innerHTML = template('chapterTemp',_this.data);
+                        _this.inContent();
                     }
                 }
             })
@@ -220,6 +230,27 @@ BookHome.prototype = {
                 $.addClass(icon,'moreClick');
                 this.isOpen = true;
             }
+        }
+    },
+    inChapter:function(){
+        var lis = $.getEle('.BookList_item');
+        this.hash = window.location.hash.substring(1);
+        var _this = this;
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].addEventListener('click',function(ev){
+                location.hash = 't=' + $.getUrl(_this.hash,'t') + '&c=chapter&catalog=' + this.dataset.id;
+            })
+        }
+    },
+    inContent:function(){
+        var catalog = $.getEle('.catalog');
+        var chapterItems = $.getEle('.chapter_item');
+        var _this = this;
+        for (var i = 0; i < chapterItems.length; i++) {
+            chapterItems[i].addEventListener('click',function(){
+                var t = $.getUrl(location.hash.substring(1),'t');
+                window.open('book.html#t=' + t + '&bookId=' + catalog.dataset.id + '&cid=' + this.dataset.cid,'_self');
+            })
         }
     }
 

@@ -235,14 +235,13 @@ header{
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
 }
 .BookList ul,.BookSearch ul{
-    display: -webkit-flex; /* Safari */
-    display: flex;
-    flex-flow: row wrap;
+    width: 100%;
 }
 .BookList ul li,.BookSearch ul li {
-    flex: 0 0 25%;
+    width: 25%;
     box-sizing: border-box;
     -moz-box-sizing: border-box; /* Firefox */
     -webkit-box-sizing: border-box; /* Safari */
@@ -250,6 +249,7 @@ header{
     border-right: 1px solid #eee;
     background-color: #fff;
     transition: .3s;
+    float: left;
 }
 .BookList ul li:hover,.BookSearch ul li:hover{
     transform: translateY(-10px);
@@ -280,7 +280,11 @@ header{
     line-height: 24px;
 }
 #BookContent .BookList_text a{
-    display: inline-block;
+    display: block;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #BookContent .BookList_name{
     color: #333;
@@ -288,10 +292,6 @@ header{
     font-weight: bold;
     cursor: pointer;
     transition: .2s;
-    line-height: 24px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 #BookContent .BookList_name:hover{
     color: #ff4b5b;

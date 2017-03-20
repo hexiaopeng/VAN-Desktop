@@ -55,14 +55,14 @@
     <script type="text/html" id="listTemp">
         <ul>
             <%for(i=0; i<data.length; i++) {%>
-                <li>
+                <li data-id="<%=data[i].id%>" class="BookList_item">
                     <div class="BookBox"></div>
                     <div class="BookList_text">
                         <a href="javascript:;">
                             <span class="BookList_name"><%=data[i].name%></span>
                         </a>
                         <p class="BookList_time">作者：<b><%=data[i].author%></b></p>
-                        <p class="BookList_section" title="data[i].newChapter">最近更新：<%=data[i].newChapter%></p>
+                        <p class="BookList_section" title="<%=data[i].newChapter%>">最近更新：<%=data[i].newChapter%></p>
                         <p class="BookList_time"><%=data[i].updateTime%></p>
                         <span class="BookList_intro">类型：<%=data[i].typeName%></span>
                     </div>
@@ -78,14 +78,14 @@
     </script>
     <script type="text/html" id="chapterTemp">
         <div class="toptitle">
-            <h1 class="catalog"><%=name%></h1>
+            <h1 class="catalog" data-id="<%=id%>"><%=name%></h1>
             <h3><%=author%> 著</h3>
             <h3>最近更新：<%=updateTime%><em></em>类型：<%=typeName%></h3>
         </div>
         <div class="catalogList">
             <ul>
                 <%for (i=0; i<data.length; i++) {%>
-                    <li>
+                    <li class="chapter_item" data-cid="<%=data[i].cid%>">
                         <a href="javascript:;"><%=data[i].name%></a>
                     </li>
                 <%}%>
