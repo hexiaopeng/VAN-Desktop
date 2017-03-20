@@ -217,6 +217,11 @@ header{
     display: none;
     width:100%;
     height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
 }
 /**********************loading******************/
 #BookLoad .ball{
@@ -227,7 +232,9 @@ header{
 }
 .BookList{
     height: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .BookList ul,.BookSearch ul{
     display: -webkit-flex; /* Safari */
@@ -272,12 +279,19 @@ header{
     top: 20px;
     line-height: 24px;
 }
+#BookContent .BookList_text a{
+    display: inline-block;
+}
 #BookContent .BookList_name{
     color: #333;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: .2s;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #BookContent .BookList_name:hover{
     color: #ff4b5b;
@@ -285,6 +299,10 @@ header{
 #BookContent .BookList_section{
     font-size: 14px;
     color: #666;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #BookContent .BookList_time{
     color: #999;
