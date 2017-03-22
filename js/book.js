@@ -1,6 +1,7 @@
 function Book(){
     this.hash = location.hash.substring(1);
     this.num = 0;
+    this.a = 0;
 }
 
 Book.prototype = {
