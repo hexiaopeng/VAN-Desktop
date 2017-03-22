@@ -90,13 +90,16 @@
                 </dt>
                 <dd class="nav_catalog" style="margin-left: -242px;">
                     <h2 class="nav_catalogue1">目录<i class="nav_list_back"></i></h2>
-                    <ul>
+                    <ul class="nav_catalog_list">
                     </ul>
                 </dd>
             </dl>
         </div>
     </nav>
     <div class="content cColor1">
+        <!-- <section class="content_section">
+            <p>11111111111111111111111111111</p>
+        </section> -->
     </div>
     <div class="side-toolbar">
         <ul>
@@ -104,5 +107,16 @@
             <li id="iconBackTop"><i></i></li>
         </ul>
     </div>
+    <script type="text/html" id="booktemp">
+        <section class="content_section">
+            <%for (i=0; i<content.length; i++){%>
+                <p><%=content[i]%></p>
+            <%}%>
+        </section>
+    </script>
+    <script src="js/data.js" charset="utf-8"></script>
+    <script src="js/template.js" charset="utf-8"></script>
+    <script src="js/method.js" charset="utf-8"></script>
+    <script src="js/book.js" charset="utf-8"></script>
 </body>
 </html>

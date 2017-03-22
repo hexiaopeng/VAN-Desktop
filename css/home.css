@@ -204,6 +204,9 @@ header{
 .nav_list .search_list li a:hover{
     border-right-color: rgba(85, 159, 244, 1);
 }
+.nav_list .search_list li.active a{
+    border-right-color: rgba(85, 159, 244, 1);
+}
 #BookContent{
     position: absolute;
     top: 0;

@@ -68,6 +68,9 @@ body#text{
     bottom: 0;
     left: -200px;
 }
+#nav_left{
+    height: 100%;
+}
 .navColor{
     box-shadow: 0 4px 6px rgb(56, 55, 55);
     background: rgb(52, 52, 52);
@@ -129,6 +132,7 @@ body#text{
     padding: 10px 10px 10px 10px;
     border-top: 1px solid #eeeeee;
     cursor: pointer;
+    height: 17px;
 }
 .nav #nav_list .line,.nav #nav_list dd li:last-child{
     border-bottom: 1px solid #eeeeee;
@@ -156,6 +160,10 @@ body#text{
 }
 .navColor #nav_list .nav_bookmark,.navColor #nav_list .nav_catalog{
     background: rgb(52, 52, 52);
+}
+.nav_catalog_list{
+    width: 100%;
+    overflow: auto;
 }
 .font_family{
     display: inline-block;

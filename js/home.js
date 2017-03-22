@@ -123,7 +123,9 @@ BookHome.prototype = {
                             author:obj.showapi_res_body.book.author,
                             updateTime:obj.showapi_res_body.book.updateTime,
                             typeName:obj.showapi_res_body.book.typeName,
-                            data:obj.showapi_res_body.book.chapterList
+                            data:obj.showapi_res_body.book.chapterList.sort(function(a,b){
+                                return a.cid - b.cid;
+                            })
                         }
                         $.getEle('.BookList').innerHTML = template('chapterTemp',_this.data);
                         _this.inContent();
@@ -166,11 +168,15 @@ BookHome.prototype = {
                         console.log(obj);
                         _this.data = {
                             id:obj.showapi_res_body.book.id,
+                            author:obj.showapi_res_body.book.author,
+                            newChapter:obj.showapi_res_body.book.newChapter,
                             name:obj.showapi_res_body.book.name,
                             author:obj.showapi_res_body.book.author,
                             updateTime:obj.showapi_res_body.book.updateTime,
                             typeName:obj.showapi_res_body.book.typeName,
-                            data:obj.showapi_res_body.book.chapterList
+                            data:obj.showapi_res_body.book.chapterList.sort(function(a,b){
+                                return a.cid - b.cid;
+                            })
                         }
                         $.getEle('.BookList').innerHTML = template('chapterTemp',_this.data);
                         _this.inContent();
@@ -199,6 +205,10 @@ BookHome.prototype = {
                 _this.lists = $.getEle('.search_list li');
                 for (var i = 0; i < _this.lists.length; i++) {
                     _this.lists[i].addEventListener('click',function(ev){
+                        for (var i = 0; i < _this.lists.length; i++) {
+                            $.removeClass(_this.lists[i],'active')
+                        }
+                        $.addClass(this,'active');
                         location.hash = 't=online&typeId=' + this.dataset.type;
                         event.stopPropagation();
                     });
