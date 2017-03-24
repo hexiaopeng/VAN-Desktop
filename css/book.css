@@ -284,6 +284,9 @@ body#text{
     transition: .2s;
     color: #ff5f5a;
 }
+#icon_detail_4 li.active{
+    color: #ff5f5a;
+}
 .iconBg{
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
@@ -323,7 +326,7 @@ body#text{
 .bg_7{
     background: rgb(52, 52, 52);
 }
-.bg_select{
+#icon_detail .active{
     border: 1px solid rgb(255, 115, 105);
     background-image: url("../image/book/select.png");
 }

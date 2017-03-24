@@ -15,20 +15,20 @@
             <div id="iconBox_detail">
                 <div id="icon_detail_4" class="details">
                     <ul>
-                        <li title="Microsoft YaHei">微软雅黑</li>
+                        <li title="Microsoft YaHei" class="active">微软雅黑</li>
                         <li title="SimSun">宋体</li>
                         <li title="SimHei">黑体</li>
                         <li title="PingFang SC">苹方</li>
                     </ul>
                 </div>
                 <div id="icon_detail" class="details">
-                    <span class="bg_1 bg_select"></span>
-                    <span class="bg_2"></span>
-                    <span class="bg_3"></span>
-                    <span class="bg_4"></span>
-                    <span class="bg_5"></span>
-                    <span class="bg_6"></span>
-                    <span class="bg_7"></span>
+                    <span class="bg_1 " data-color="rgb(255, 255, 255)"></span>
+                    <span class="bg_2 " data-color="rgb(255, 190, 119)"></span>
+                    <span class="bg_3" data-color="rgb(177, 231, 175)"></span>
+                    <span class="bg_4" data-color="rgb(177, 216, 235)"></span>
+                    <span class="bg_5" data-color="rgb(246, 196, 177)"></span>
+                    <span class="bg_6 active" data-color="rgb(217, 204, 235)"></span>
+                    <span class="bg_7 " data-color="rgb(52, 52, 52)"></span>
                 </div>
                 <div id="icon_detail_2" class="details">
                     <div class="font_size">
@@ -57,9 +57,6 @@
                 </div>
                 <div class="icon-width">
                     <span>宽度</span>
-                </div>
-                <div class="icon-middle">
-                    <span>切换</span>
                 </div>
             </div>
         </div>
@@ -97,6 +94,7 @@
         </div>
     </nav>
     <div class="content cColor1">
+
         <!-- <section class="content_section">
             <p>11111111111111111111111111111</p>
         </section> -->
@@ -110,7 +108,7 @@
     <script type="text/html" id="booktemp">
         <section class="content_section">
             <%for (i=0; i<content.length; i++){%>
-                <p><%=content[i]%></p>
+                <p><%=content[i]%></p></br>
             <%}%>
         </section>
     </script>

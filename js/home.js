@@ -165,7 +165,6 @@ BookHome.prototype = {
                     if (obj.showapi_res_body.ret_code != 0) {
                         $.getEle('.BookList').innerHTML = '没有找到您要的小说';
                     } else {
-                        console.log(obj);
                         _this.data = {
                             id:obj.showapi_res_body.book.id,
                             author:obj.showapi_res_body.book.author,
