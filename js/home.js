@@ -1,3 +1,6 @@
+/**
+ * [BookHome description]  定义的小说home构造函数
+ */
 function BookHome(){
     this.hash = window.location.hash.substring(1);
     location.hash = $.getUrl(this.hash,'t') || 't=local'
@@ -7,6 +10,9 @@ function BookHome(){
 
 BookHome.prototype = {
     constructor: BookHome,
+    /**
+     * [init description]  定义的初始化函数
+     */
     init:function(){
         var _this = this;
         if (this.source == 'search') {
@@ -51,6 +57,9 @@ BookHome.prototype = {
             };
         }
     },
+    /**
+     * [local description]  定义的加载本地小说方法
+     */
     local:function(){
         var _this = this;
         this.con = $.getUrl(this.hash,'c') || 'list';
@@ -85,6 +94,9 @@ BookHome.prototype = {
             })
         }
     },
+    /**
+     * [searchBook description]  定义的搜索小说方法
+     */
     searchBook:function(){
         var _this = this;
         this.con = $.getUrl(this.hash,'c') || 'list';
@@ -134,6 +146,9 @@ BookHome.prototype = {
             })
         }
     },
+    /**
+     * [online description]  定义的在线小说方法
+     */
     online:function(){
         var _this = this;
         this.con = $.getUrl(this.hash,'c') || 'list';
@@ -184,6 +199,9 @@ BookHome.prototype = {
             })
         }
     },
+    /**
+     * [addTypeList description]  定义的加载在线小说类别方法
+     */
     addTypeList:function(){
         var _this = this;
         $.ajax({
@@ -215,6 +233,10 @@ BookHome.prototype = {
             }
         })
     },
+    /**
+     * [ripple description]  定义的波纹效果方法
+     * @param  {[type]} That [description]  传入触发的元素
+     */
     ripple:function(That,ev){
         var span = $.getEle.call(That,'span')[0] || $.getEle.call(That,'span');
         if(span){
@@ -226,6 +248,9 @@ BookHome.prototype = {
             span.className = 'ink animate-ink';
         }
     },
+    /**
+     * [openList description]  定义的展开列表方法
+     */
     openList:function(That){
         var ul = $.getEle.call(That,'ul');
         var icon = $.getEle.call(That,'.more');
@@ -241,6 +266,9 @@ BookHome.prototype = {
             }
         }
     },
+    /**
+     * [inChapter description]  定义的进入章节页面方法
+     */
     inChapter:function(){
         var lis = $.getEle('.BookList_item');
         this.hash = window.location.hash.substring(1);
@@ -251,6 +279,9 @@ BookHome.prototype = {
             })
         }
     },
+    /**
+     * [inContent description]  定义的进入进入小说页的方法
+     */
     inContent:function(){
         var catalog = $.getEle('.catalog');
         var chapterItems = $.getEle('.chapter_item');

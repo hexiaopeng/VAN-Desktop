@@ -1,3 +1,6 @@
+/**
+ * [Book description]  定义的小说阅读页构造函数
+ */
 function Book(){
     this.hash = location.hash.substring(1);
     this.num = 0;
@@ -6,6 +9,9 @@ function Book(){
 
 Book.prototype = {
     constructor:Book,
+    /**
+     * [init description]  定义的初始化方法
+     */
     init:function(){
         var _this = this;
         this.judgeHash();
@@ -110,6 +116,9 @@ Book.prototype = {
         };
         $.getEle('#iconBackTop').addEventListener('click',this.toTop)
     },
+    /**
+     * [judgeHash description]  定义的判断hash值的方法
+     */
     judgeHash:function(){
         if ($.getUrl(this.hash,'t') == 'local') {
             this.local();
@@ -117,6 +126,9 @@ Book.prototype = {
             this.online();
         };
     },
+    /**
+     * [local description]  定义的加载本地小说的方法
+     */
     local:function(){
         var _this = this;
         var bookId = $.getUrl(this.hash,'bookId');
@@ -135,6 +147,9 @@ Book.prototype = {
             }
         })
     },
+    /**
+     * [online description]  定义的加载在线小说的方法
+     */
     online:function(){
         var _this = this;
         var bookId = $.getUrl(this.hash,'bookId');
@@ -161,6 +176,9 @@ Book.prototype = {
             }
         })
     },
+    /**
+     * [addCatalog description]  定义的加载章节的方法
+     */
     addCatalog:function(data){
         var _this = this;
         var html = '';
@@ -176,6 +194,9 @@ Book.prototype = {
             })
         }
     },
+    /**
+     * [infoStyle description]  定义的加载样式的方法
+     */
     infoStyle:function(){
         var font = $.getEle('#icon_detail_4');
         var color = $.getEle('#icon_detail');
@@ -264,6 +285,9 @@ Book.prototype = {
             }
         })
     },
+    /**
+     * [closeHeader description]  定义的关闭头部菜单的方法
+     */
     closeHeader:function(){
         $.getEle('#icon_detail_4').style.display = 'none';
         $.move($.getEle('#icon_detail_4'),{opacity : 0},'200','easeOut');
@@ -278,6 +302,9 @@ Book.prototype = {
         $.move($.getEle('#icon_detail_3'),{opacity : 0},'200','easeOut');
         $.getEle('.icon-width').onOff = false;
     },
+    /**
+     * [noBubble description]  定义的阻止冒泡方法
+     */
     noBubble:function(e){
         if (e && e.stopPropagation) {
             e.stopPropagation();
@@ -286,6 +313,9 @@ Book.prototype = {
             return false;
         }
     },
+    /**
+     * [toTop description]  定义的滚动到顶部的方法
+     */
     toTop:function(){
         var x = document.body.scrollTop || document.documentElement.scrollTop;
         var timer = setInterval(function(){
